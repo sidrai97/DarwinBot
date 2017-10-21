@@ -1,4 +1,4 @@
-var myPythonScriptPath = './test/sample.py';
+var myPythonScriptPath = 'script.py';
 
 // Use python shell
 var PythonShell = require('python-shell');
