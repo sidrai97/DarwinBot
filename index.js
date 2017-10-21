@@ -11,8 +11,6 @@ const myPythonScriptPath = './test/sample.py';
 
 // Use python shell
 const PythonShell = require('python-shell');
-const pyshell = new PythonShell(myPythonScriptPath);
-
 
 app.set('port', (process.env.PORT || 5000))
 
@@ -22,6 +20,7 @@ app.use(bodyParser.json())
 
 // ROUTES
 app.get('/', function(req, res) {
+    const pyshell = new PythonShell(myPythonScriptPath);
     pyshell.on('message', function (message) {
         // received a message sent from the Python script (a simple "print" statement)
         console.log(message);
