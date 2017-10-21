@@ -8,7 +8,6 @@ my_eyes = 'Brown'
 my_teeth = 'White'
 my_hair = 'Black'
 
-print(sys.version)
 print("Let's talk about %s." % my_name)
 print("He's %d centimeters tall." % my_height)
 print("He's %d kilograms heavy." % my_weight)
