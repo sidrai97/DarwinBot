@@ -1,0 +1,25 @@
+{
+  "name": "darwinbot",
+  "version": "1.0.0",
+  "description": "darwin - intelligent health assistant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chatbot",
+    "healthcare",
+    "darwinbot",
+    "health",
+    "assistant",
+    "fitness"
+  ],
+  "author": "sidrai97",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "python-shell": "^0.4.0",
+    "request": "^2.83.0"
+  }
+}
