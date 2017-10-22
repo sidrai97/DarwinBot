@@ -121,22 +121,14 @@ function sendTextMessage(recipientId, messageText, quickReply) {
 
 //
 function receivedMessage(event){
-	var senderID = event.sender.id;
-	var recipientID = event.recipient.id;
-	var timeOfMessage = event.timestamp;
-	var message = event.message;
-
-	console.log("Received message for user %d and page %d at %d with message:", senderID, recipientID, timeOfMessage);
-	console.log(JSON.stringify(event));
-	
-	var messageId = message.mid;
-	var messageText = message.text;
-	var messageAttachments = message.attachments;
-  
-	if (messageText) {
-		var msg=messageText.toLowerCase()
-		sendTextMessage(senderID,msg)
-	}
+	var pypath = './msgNlp/main.py'
+	var options = {mode:'text',args:[JSON.stringify(event)]}
+	PythonShell.run(pypath,options,function(err,results){
+		if(err) throw err
+		var messageData=JSON.parse(results[1])
+		console.log("received from python : "+messageData)
+		callSendAPI(messageData)
+	})
 }
 
 // run app

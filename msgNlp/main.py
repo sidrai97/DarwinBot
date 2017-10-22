@@ -1,13 +1,24 @@
 import sys
 import json
-received=json.loads(sys.argv[1])
-messageData={
-    'recipient':{
-        'id': received['id']
-    },
-    'message':{
-        'text': received['msg']['text']
+
+def loadCmdArgs():
+    return json.loads(sys.argv[1])
+
+def sendTextMessage(recipientId, messageText, quickReply=None):
+    messageData={
+        'recipient':{
+            'id': recipientId
+        },
+        'message':{
+            'text': messageText
+        }
     }
-}
-print(json.dumps(received))
-print(json.dumps(messageData))
+    if(quickReply is not None):
+        messageData['message']['quick_replies']=quickReply
+    print(json.dumps(messageData))
+    exit()
+
+event=loadCmdArgs()
+senderId=event['sender']['id']
+messageText=event['message']['text']
+sendTextMessage(senderId,messageText)
