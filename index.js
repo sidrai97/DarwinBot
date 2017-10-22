@@ -125,7 +125,7 @@ function receivedMessage(event){
 	var options = {mode:'text',args:[JSON.stringify(event)]}
 	PythonShell.run(pypath,options,function(err,results){
 		if(err) throw err
-		var messageData=JSON.parse(results[1])
+		var messageData=JSON.parse(results[0])
 		console.log("received from python : "+messageData)
 		callSendAPI(messageData)
 	})
