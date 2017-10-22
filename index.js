@@ -3,6 +3,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
+const PythonShell = require('python-shell')
 
 const app = express()
 const token = process.env.FB_VERIFY_TOKEN
@@ -120,22 +121,22 @@ function sendTextMessage(recipientId, messageText, quickReply) {
 
 //
 function receivedMessage(event){
-    var senderId = event.sender.id
-	var recipientId = event.recipient.id
-	var timeOfMessage = event.timestamp
-	var message = event.message
+	var senderID = event.sender.id;
+	var recipientID = event.recipient.id;
+	var timeOfMessage = event.timestamp;
+	var message = event.message;
 
-	console.log("Received message for user %d and page %d at %d with message:", senderId, recipientId, timeOfMessage)
-    console.log(JSON.stringify(message))
-
-    var messageId = message.mid
-	var messageText = message.text
-    var messageAttachments = message.attachments
-    
-    if(messageText){
-        var msg=messageText.toLowerCase()
-        sendTextMessage(senderId,msg)
-    }
+	console.log("Received message for user %d and page %d at %d with message:", senderID, recipientID, timeOfMessage);
+	console.log(JSON.stringify(event));
+	
+	var messageId = message.mid;
+	var messageText = message.text;
+	var messageAttachments = message.attachments;
+  
+	if (messageText) {
+		var msg=messageText.toLowerCase()
+		sendTextMessage(senderID,msg)
+	}
 }
 
 // run app

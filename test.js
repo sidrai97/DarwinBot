@@ -1,40 +1,12 @@
-'use strict'
-
-const express = require('express')
-const bodyParser = require('body-parser')
-const request = require('request')
-
-const app = express()
-//const token = process.env.FB_VERIFY_TOKEN
-//const access = process.env.FB_ACCESS_TOKEN
-
-const myPythonScriptPath = './test/sample.py';
-// Use python shell
 const PythonShell = require('python-shell');
-
-app.set('port', (process.env.PORT || 5000))
-// Allows us to process the data
-app.use(bodyParser.urlencoded({extended: false}))
-app.use(bodyParser.json())
-
-// ROUTES
-app.get('/', function(req, res) {
-    const pyshell = new PythonShell(myPythonScriptPath);
-    pyshell.on('message', function (message) {
-        // received a message sent from the Python script (a simple "print" statement)
-        console.log(message);
-    });  
-    // end the input stream and allow the process to exit
-    pyshell.end(function (err) {
-        if (err){
-            throw err;
-        };
-        console.log('finished');
-    });
-    res.send("Hi, I am Darwin your personal health assistant!")
-})
-
-// run app
-app.listen(app.get('port'), function() {
-	console.log("running: "+app.get('port'))
+event={id:123,msg:{text:"hii"}}
+var pypath = './msgNlp/sample.py'
+var options = {mode:'text',args:[JSON.stringify(event)]}
+PythonShell.run(pypath,options,function(err,results){
+    if(err) throw err
+    myData=results[0]
+    messageData=results[1]
+    resp=JSON.parse(messageData)
+    console.log(myData)
+    console.log(typeof(resp.message.text))
 })
