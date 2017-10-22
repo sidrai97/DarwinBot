@@ -16,7 +16,7 @@ app.use(bodyParser.json())
 
 // ROUTES
 app.get('/', function(req, res) {
-	res.send("Hi, I am Darwin your personal health assistant!")
+	res.send("Hi, I am Darwin - Intelligent Health Assistant!")
 })
 
 app.get('/webhook', function(req, res) {
