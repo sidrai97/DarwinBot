@@ -43,8 +43,7 @@ app.post('/webhook', function (req, res) {
                 if (event.message) {
                     //receivedMessage(event)
                     console.log("Webhook received message event: ", event)
-                    nlpData=JSON.stringify(event.message.nlp)
-                    console.log(nlpData)
+                    console.log(JSON.stringify(event.message.nlp))
                 }
                 else if (event.postback){
                     //receivedPostback(event)
