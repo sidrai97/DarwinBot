@@ -31,7 +31,7 @@ app.get('/webhook', function(req, res) {
 })
 
 app.post('/webhook', function (req, res) {
-	var data = req.body; 
+	var data = req.body
 	// Make sure this is a page subscription
 	if (data.object === 'page') {
 		// Iterate over each entry - there may be multiple if batched
@@ -41,9 +41,8 @@ app.post('/webhook', function (req, res) {
 			// Iterate over each messaging event
 			entry.messaging.forEach(function(event) {
                 if (event.message) {
-                    //receivedMessage(event)
+                    receivedMessage(event)
                     console.log("Webhook received message event: ", event)
-                    console.log(JSON.stringify(event.message.nlp))
                 }
                 else if (event.postback){
                     //receivedPostback(event)
@@ -101,6 +100,42 @@ function userProfileAPI(user_page_id){
 // capitalize string
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1)
+}
+
+// text message and quick reply
+function sendTextMessage(recipientId, messageText, quickReply) {
+	var messageData = {
+        recipient: {
+            id: recipientId
+        },
+        message: {
+            text: messageText
+        }
+    }
+    if(quickReply !== undefined){
+		messageData.message.quick_replies=quickReply
+	}
+	callSendAPI(messageData)
+}
+
+//
+function receivedMessage(event){
+    var senderId = event.sender.id
+	var recipientId = event.recipient.id
+	var timeOfMessage = event.timestamp
+	var message = event.message
+
+	console.log("Received message for user %d and page %d at %d with message:", senderId, recipientId, timeOfMessage)
+    console.log(JSON.stringify(message))
+
+    var messageId = message.mid
+	var messageText = message.text
+    var messageAttachments = message.attachments
+    
+    if(messageText){
+        var msg=messageText.toLowerCase()
+        sendTextMessage(senderId,msg)
+    }
 }
 
 // run app
