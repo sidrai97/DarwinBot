@@ -69,7 +69,6 @@ function callSendAPI(messageData) {
 		if (!error && response.statusCode == 200) {
 			var recipientId = body.recipient_id
 			var messageId = body.message_id
-
 			console.log("Successfully sent the message with id %s to recipient %s", messageId, recipientId)
 		} 
 		else {
@@ -98,28 +97,7 @@ function userProfileAPI(user_page_id){
 	})
 }
 
-// capitalize string
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1)
-}
-
-// text message and quick reply
-function sendTextMessage(recipientId, messageText, quickReply) {
-	var messageData = {
-        recipient: {
-            id: recipientId
-        },
-        message: {
-            text: messageText
-        }
-    }
-    if(quickReply !== undefined){
-		messageData.message.quick_replies=quickReply
-	}
-	callSendAPI(messageData)
-}
-
-//
+//sending received message to python script
 function receivedMessage(event){
 	var pypath = './msgNlp/main.py'
 	var options = {mode:'text',args:[JSON.stringify(event)]}
