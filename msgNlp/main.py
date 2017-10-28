@@ -20,5 +20,7 @@ def sendTextMessage(recipientId, messageText, quickReply=None):
 
 event=loadCmdArgs()
 senderId=event['sender']['id']
-messageText=event['message']['text']
+messageText="Can't understand your message"
+if 'text' in event['message']:
+    messageText=event['message']['text']
 sendTextMessage(senderId,messageText)
