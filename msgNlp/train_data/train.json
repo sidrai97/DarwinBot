@@ -1,0 +1,15 @@
+[
+    {"text": "hi, wassup?", "label": "greetings"},
+    {"text": "hello, how are you?", "label": "greetings"},
+    {"text": "hey", "label": "greetings"},
+    {"text": "yoo!", "label": "greetings"},
+    {"text": "good morning!", "label": "greetings"},
+    {"text": "good afternoon!", "label": "greetings"},
+    {"text": "good evening!", "label": "greetings"},
+    {"text": "ssup", "label": "greetings"},
+    {"text": "see you later", "label": "end_converstion"},
+    {"text": "bye!", "label": "end_converstion"},
+    {"text": "ttyl", "label": "end_converstion"},
+    {"text": "catch you later!", "label": "end_converstion"},
+    {"text": "good bye", "label": "end_converstion"}
+]
