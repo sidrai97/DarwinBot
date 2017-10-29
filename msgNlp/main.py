@@ -1,26 +1,9 @@
-import sys
-import json
+from argsLoader import loadCmdArgs
+import messageHandler
 
-def loadCmdArgs():
-    return json.loads(sys.argv[1])
-
-def sendTextMessage(recipientId, messageText, quickReply=None):
-    messageData={
-        'recipient':{
-            'id': recipientId
-        },
-        'message':{
-            'text': messageText
-        }
-    }
-    if(quickReply is not None):
-        messageData['message']['quick_replies']=quickReply
-    print(json.dumps(messageData))
-    exit()
-
-event=loadCmdArgs()
-senderId=event['sender']['id']
+eventObject=loadCmdArgs()
+senderId=eventObject['sender']['id']
 messageText="Can't understand your message"
-if 'text' in event['message']:
-    messageText=event['message']['text']
-sendTextMessage(senderId,messageText)
+if 'text' in eventObject['message']:
+    messageText=eventObject['message']['text']
+messageHandler.sendTextMessage(senderId,messageText)
