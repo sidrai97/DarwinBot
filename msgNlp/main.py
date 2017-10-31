@@ -1,20 +1,30 @@
 from argsLoader import loadCmdArgs
 import messageHandler
+from userProfile import userProfileApi
+import mongoCURD
 
 #load eventObj from command Line
 eventObject=loadCmdArgs()
 
 # userId from eventObj
-senderId=eventObject['sender']['id']
+recipientId=eventObject['sender']['id']
 
 # fallback msg
-messageText="Can't understand your message"
+messageText="I'm sorry but I didn't understand."
 
 # 
 if 'postback' in eventObject:
     if eventObject['postback']['payload'] == 'get_started':
-        messageText="Hi! I'm Darwin your personal Health Assistant. I can help you achieve your goal of 'Good Health'. To know more checkout the 'Features Menu' or simply say 'help'."
-        messageHandler.sendTextMessage(senderId,messageText)
+        #messageText=userProfileApi(recipientId)
+        #messageHandler.sendTextMessage(recipientId,messageText)
+        messageText="Hi! I'm Darwin your personal Health Assistant."
+        messageHandler.sendTextMessage(recipientId,messageText)
+        messageText="I can help you achieve your goal of 'Good Health'."
+        messageHandler.sendTextMessage(recipientId,messageText)
+        messageText="To know more checkout the 'Features Menu' or simply say 'help'."
+        messageHandler.sendTextMessage(recipientId,messageText)
+        # get userProfile and make an entry of user in db
+        mongoCURD.insertUserData(userProfileApi(recipientId))
     elif eventObject['postback']['payload'] == 'symptom_checker':
         pass
     elif eventObject['postback']['payload'] == 'plan_my_workout':
@@ -29,6 +39,6 @@ elif 'message' in eventObject:
     if 'text' in eventObject['message']:
         #echo text msg
         messageText=eventObject['message']['text']
-        messageHandler.sendTextMessage(senderId,messageText)
+        messageHandler.sendTextMessage(recipientId,messageText)
 else:
-    messageHandler.sendTextMessage(senderId,messageText)
+    messageHandler.sendTextMessage(recipientId,messageText)

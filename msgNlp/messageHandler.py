@@ -2,7 +2,7 @@ import json
 
 def sendToNode(messageData):
     print(json.dumps(messageData))
-    exit()
+    return
 
 def sendTextMessage(recipientId, messageText, quickReply=None):
     messageData={
@@ -17,3 +17,4 @@ def sendTextMessage(recipientId, messageText, quickReply=None):
     if(quickReply is not None):
         messageData['message']['quick_replies']=quickReply
     sendToNode(messageData)
+    return    
