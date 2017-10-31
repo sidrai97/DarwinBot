@@ -2,9 +2,10 @@ from argsLoader import loadCmdArgs
 import messageHandler
 from userProfile import userProfileApi
 import mongoCURD
+import json
 
 #load eventObj from command Line
-eventObject=loadCmdArgs()
+eventObject=json.loads(loadCmdArgs())
 
 # userId from eventObj
 recipientId=eventObject['sender']['id']
@@ -26,7 +27,7 @@ if 'postback' in eventObject:
         # get userProfile and make an entry of user in db
         mongoCURD.insertUserData(userProfileApi(recipientId))
     elif eventObject['postback']['payload'] == 'symptom_checker':
-        pass
+        messageHandler.sendButtonMessage(recipientId)
     elif eventObject['postback']['payload'] == 'plan_my_workout':
         pass
     elif eventObject['postback']['payload'] == 'get_workout_recommendations':

@@ -1,5 +1,5 @@
 import json
 import sys
 
-def loadCmdArgs():
-    return json.loads(sys.argv[1])
+def loadCmdArgs(idx=1):
+    return sys.argv[idx]
