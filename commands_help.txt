@@ -1,0 +1,3 @@
+mongoimport --jsonArray --db darwin --collection exercises_guide filename.json
+heroku config
+mongo ds141185.mlab.com:41185/heroku_4n5cd7x4 -p darwinbot17

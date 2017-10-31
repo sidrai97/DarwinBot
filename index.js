@@ -43,11 +43,10 @@ app.post('/webhook', function (req, res) {
 			entry.messaging.forEach(function(event) {
                 if (event.message) {
 					receivedMessage(event)
-					console.log(event.message.attachments)
-                    console.log("Webhook received message event: ", event)
+					console.log("Webhook received message event: ", event)
                 }
                 else if (event.postback){
-                    //receivedPostback(event)
+                    receivedMessage(event)
                     console.log("Webhook received postback event: ", event)
                 } 
                 else {
@@ -114,5 +113,3 @@ function receivedMessage(event){
 app.listen(app.get('port'), function() {
 	console.log("running: "+app.get('port'))
 })
-
-//Hi! I'm Darwin your personal health assistant. I can help you with symptom checking, health tracking, workout guide.
