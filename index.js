@@ -12,7 +12,7 @@ const access = (process.env.FB_ACCESS_TOKEN || process.env.darwinbot_accesstoken
 app.set('port', (process.env.PORT || 5000)) 
  
 // Allows us to process the data
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.urlencoded({extended: false}))	
 app.use(bodyParser.json())
 
 // ROUTES
@@ -114,3 +114,5 @@ function receivedMessage(event){
 app.listen(app.get('port'), function() {
 	console.log("running: "+app.get('port'))
 })
+
+//Hi! I'm Darwin your personal health assistant. I can help you with symptom checking, health tracking, workout guide.
