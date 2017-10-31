@@ -8,9 +8,10 @@ const PythonShell = require('python-shell')
 const app = express()
 const token = (process.env.FB_VERIFY_TOKEN || 'darwinbot')
 const access = (process.env.FB_ACCESS_TOKEN || process.env.darwinbot_accesstoken)
- 
+
 app.set('port', (process.env.PORT || 5000)) 
- 
+app.set('view engine', 'pug')
+
 // Allows us to process the data
 app.use(bodyParser.urlencoded({extended: false}))	
 app.use(bodyParser.json())
@@ -58,6 +59,30 @@ app.post('/webhook', function (req, res) {
 	}
 })
 
+app.get('/enterDob', function(req, resp) {
+	var userid=req.query.userid
+	resp.render('dobView', {userid:userid})
+})
+
+app.get('/storeDob', function(req, resp){
+	var userid=req.query.userid
+	var dob=req.query.dob
+	console.log(userid)
+	console.log(dob)
+	var pypath = './msgNlp/addDob.py'
+	var options = {mode:'text',args:[userid,dob]}
+	PythonShell.run(pypath,options,function(err,results){
+		if(err) throw err
+		for(var idx=0; idx<results.length; idx++){
+			var messageData=JSON.parse(results[idx])
+			console.log("received from python : "+messageData)
+			callSendAPI(messageData)
+			setTimeout(function(){},1000)
+		}
+	})
+	resp.send("Thankyou for your cooperation!!")
+})
+
 // Send Message to Facebook
 function callSendAPI(messageData) {
 	request({
@@ -79,33 +104,18 @@ function callSendAPI(messageData) {
 	})
 }
 
-// get user data from facebook
-function userProfileAPI(user_page_id){
-	request({
-		uri: 'https://graph.facebook.com/v2.6/'+user_page_id,
-		qs: { access_token: access },
-		method: 'GET'
-	}, function (error, response, body) {
-		if (!error && response.statusCode == 200) {
-			console.log("user profile body:", body)
-		} 
-		else {
-			console.error("Unable to send message.")
-			console.error(response)
-			console.error(error)
-		}
-	})
-}
-
 //sending received message to python script
 function receivedMessage(event){
 	var pypath = './msgNlp/main.py'
 	var options = {mode:'text',args:[JSON.stringify(event)]}
 	PythonShell.run(pypath,options,function(err,results){
 		if(err) throw err
-		var messageData=JSON.parse(results[0])
-		console.log("received from python : "+messageData)
-		callSendAPI(messageData)
+		for(var idx=0; idx<results.length; idx++){
+			var messageData=JSON.parse(results[idx])
+			console.log("received from python : "+messageData)
+			callSendAPI(messageData)
+			setTimeout(function(){},1000)
+		}
 	})
 }
 

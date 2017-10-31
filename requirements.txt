@@ -1,3 +1,4 @@
 textblob==0.13.0
 infermedica-api==0.0.10
 pymongo==3.5.1
+requests==2.18.4
