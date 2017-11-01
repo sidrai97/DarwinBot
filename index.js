@@ -114,7 +114,7 @@ function receivedMessage(event){
 			var messageData=JSON.parse(results[idx])
 			console.log("received from python : "+messageData)
 			callSendAPI(messageData)
-			setTimeout(function(){},1000)
+			setTimeout(function(){},7000);
 		}
 	})
 }

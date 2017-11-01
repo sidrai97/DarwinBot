@@ -1,4 +1,5 @@
 import json
+from commonVars import app_url
 
 def sendToNode(messageData):
     print(json.dumps(messageData))
@@ -33,7 +34,7 @@ def sendButtonMessage(recipientId):
                     'buttons':[
                         {
                             'type':'web_url',
-                            'url':'https://df89a083.ngrok.io/enterDob?userid='+recipientId,
+                            'url':app_url+'/enterDob?userid='+recipientId,
                             'title':'Click Here',
                             'webview_height_ratio':'compact'
                         }
