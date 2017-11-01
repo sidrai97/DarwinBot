@@ -67,20 +67,10 @@ request={
 #response=api.diagnosis(request)
 #response=response.to_dict()
 #print(response)
-#print(api.condition_details('c_221'))
+req=api.condition_details('c_221')
+req=req.to_dict()
 # severe headaches, light sensitivity and a stiff neck
 
-request = infermedica_api.Diagnosis(sex='female', age=35)
-
-request.add_symptom('s_10', 'present')
-request.add_symptom('s_608', 'present')
-request.add_symptom('s_1394', 'absent')
-request.add_symptom('s_216', 'present')
-request.add_symptom('s_9', 'present')
-request.add_symptom('s_188', 'present')
-
-# call the explain method
-request = api.explain(request, target_id='c_62')
 
 # and see the results
-print('\n\n', request)
+print('\n\n', req)

@@ -33,6 +33,7 @@ def userMsgParse(recipientId,messageText,diagnosisRaw=False):
         for c in response['conditions']:
             if c['probability'] > diagnosis_threshold:
                 cond=api.condition_details(c['id'])
+                cond=cond.to_dict()
                 hint=cond['extras']['hint']
                 text='My algorithm says you have symptoms of '+c['common_name']
                 messageHandler.sendTextMessage(recipientId,text)
