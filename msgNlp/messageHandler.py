@@ -20,7 +20,7 @@ def sendTextMessage(recipientId, messageText, quickReply=None):
     sendToNode(messageData)
     return
 
-def sendButtonMessage(recipientId):
+def sendButtonMessage(recipientId,text,buttonsArray=None):
     messageData={
         'recipient':{
 			'id': recipientId
@@ -30,15 +30,8 @@ def sendButtonMessage(recipientId):
 				'type':'template',
 				'payload':{
 					'template_type':'button',
-					'text':'I need your date of Birth for symptom checking',
-                    'buttons':[
-                        {
-                            'type':'web_url',
-                            'url':app_url+'/enterDob?userid='+recipientId,
-                            'title':'Click Here',
-                            'webview_height_ratio':'compact'
-                        }
-                    ]
+					'text':text,
+                    'buttons':buttonsArray
 				}
 			}
 		}

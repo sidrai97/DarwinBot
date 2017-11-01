@@ -3,6 +3,8 @@ import messageHandler
 from userProfile import userProfileApi
 import mongoCURD
 import json
+from commonVars import app_url
+import symptomChecker
 
 #load eventObj from command Line
 eventObject=json.loads(loadCmdArgs())
@@ -11,7 +13,7 @@ eventObject=json.loads(loadCmdArgs())
 recipientId=eventObject['sender']['id']
 
 # fallback msg
-messageText="I'm sorry but I didn't understand."
+messageText="I'm sorry but I didn't understand. Please Try Again!"
 
 # 
 if 'postback' in eventObject:
@@ -26,8 +28,17 @@ if 'postback' in eventObject:
         if mongoCURD.checkDOBExists(recipientId):
             messageText="Ok so tell me about your symptoms eg. stomach ache, headache, etc."
             messageHandler.sendTextMessage(recipientId,messageText)
-        else:    
-            messageHandler.sendButtonMessage(recipientId)
+        else:
+            buttonsArray=[
+                {
+                    'type':'web_url',
+                    'url':app_url+'/enterDob?userid='+recipientId,
+                    'title':'Click Here',
+                    'webview_height_ratio':'compact'
+                }
+            ]
+            text='I need your date of Birth for symptom checking'
+            messageHandler.sendButtonMessage(recipientId,text,buttonsArray)
     elif eventObject['postback']['payload'] == 'plan_my_workout':
         messageText="Feature coming soon!"
         messageHandler.sendTextMessage(recipientId,messageText)
@@ -40,8 +51,16 @@ if 'postback' in eventObject:
     elif eventObject['postback']['payload'] == 'exercises_guide':
         messageText="Feature coming soon!"
         messageHandler.sendTextMessage(recipientId,messageText)
+    elif 'diagnosis_postback||' in eventObject['postback']['payload']:
+        messageText=eventObject['postback']['payload']
+        symptomChecker.userMsgParse(recipientId,messageText,True)
+    else:
+        messageText="Not sure what you were seeking! No problem try again."
+        messageHandler.sendTextMessage(recipientId,messageText)
 elif 'message' in eventObject:
     if 'text' in eventObject['message']:
         #symptom_checker
+        messageText=eventObject['message']['text']
+        symptomChecker.userMsgParse(recipientId,messageText)
 else:
     messageHandler.sendTextMessage(recipientId,messageText)
