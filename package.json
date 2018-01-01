@@ -4,15 +4,23 @@
   "description": "darwin - intelligent health assistant",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sidrai97/DarwinBot.git"
   },
   "keywords": [
+    "facebook",
+    "messenger",
+    "bot",
     "chatbot",
     "healthcare",
-    "darwinbot",
-    "health",
-    "assistant",
-    "fitness"
+    "fitness",
+    "symptom",
+    "checker",
+    "exercise",
+    "recommendation"
   ],
   "author": "sidrai97",
   "license": "MIT",

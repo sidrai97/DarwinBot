@@ -6,8 +6,8 @@ const request = require('request')
 const PythonShell = require('python-shell')
 
 const app = express()
-const token = (process.env.FB_VERIFY_TOKEN || 'darwinbot')
-const access = (process.env.FB_ACCESS_TOKEN || process.env.darwinbot_accesstoken)
+const token = (process.env.FB_VERIFY_TOKEN)
+const access = (process.env.FB_ACCESS_TOKEN)
 
 app.set('port', (process.env.PORT || 5000)) 
 app.set('view engine', 'pug')
