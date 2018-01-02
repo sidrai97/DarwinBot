@@ -69,7 +69,7 @@ app.get('/storeDob', function(req, resp){
 	var dob=req.query.dob
 	console.log(userid)
 	console.log(dob)
-	var pypath = './msgNlp/addDob.py'
+	var pypath = './process_message/addDob.py'
 	var options = {mode:'text',args:[userid,dob]}
 	PythonShell.run(pypath,options,function(err,results){
 		if(err) throw err
@@ -106,7 +106,7 @@ function callSendAPI(messageData) {
 
 //sending received message to python script
 function receivedMessage(event){
-	var pypath = './msgNlp/main.py'
+	var pypath = './process_message/main.py'
 	var options = {mode:'text',args:[JSON.stringify(event)]}
 	PythonShell.run(pypath,options,function(err,results){
 		if(err) throw err
