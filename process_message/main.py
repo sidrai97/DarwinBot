@@ -1,10 +1,7 @@
+import messageHandler, mongoCURD, json, symptomChecker
 from argsLoader import loadCmdArgs
-import messageHandler
 from userProfile import userProfileApi
-import mongoCURD
-import json
 from commonVars import app_url
-import symptomChecker
 
 #load eventObj from command Line
 eventObject=json.loads(loadCmdArgs())
@@ -20,7 +17,7 @@ if 'postback' in eventObject:
     if eventObject['postback']['payload'] == 'get_started':
         #messageText=userProfileApi(recipientId)
         #messageHandler.sendTextMessage(recipientId,messageText)
-        messageText="Hi! I'm Darwin your personal Health Assistant.\nI can help you achieve your goal of 'Good Health'.\nTo know more checkout the 'Features Menu' or simply say 'help'."
+        messageText="Hi! I'm Darwin your personal Health Assistant.\nI can help you achieve your goal of 'Good Health'.\nTo know more checkout the 'Menu'."
         messageHandler.sendTextMessage(recipientId,messageText)
         # get userProfile and make an entry of user in db
         mongoCURD.insertUserData(userProfileApi(recipientId))

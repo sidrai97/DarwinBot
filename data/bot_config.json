@@ -14,37 +14,37 @@
     	"composer_input_disabled": false,
     	"call_to_actions":[
     		{
-        		"title":"Features Menu",
+        		"title":"Menu 📜",
         		"type":"nested",
         		"call_to_actions":[
         			{
-            			"title":"Symptom Checker",
+            			"title":"Symptom Checker 💊",
             			"type":"postback",
             			"payload":"symptom_checker"
         			},
         			{
-            			"title":"Health Tracker",
+            			"title":"Health Tracker 💪",
             			"type":"nested",
             			"call_to_actions":[
             				{
-            					"title":"Plan my workout",
+            					"title":"Plan my workout 📝",
             					"type":"postback",
             					"payload":"plan_my_workout"
             				},
             				{
-            					"title":"Get Workout Recommendations",
+            					"title":"Get Workout Recommendations 🏋",
             					"type":"postback",
             					"payload":"get_workout_recommendations"
             				},
             				{
-            					"title":"My Workout Statistics",
+            					"title":"My Workout Statistics 📊",
             					"type":"postback",
             					"payload":"my_workout_statistics"
             				}
             			]
         			},
         			{
-            			"title":"Exercises Guide",
+            			"title":"Exercises Encyclopedia 📔",
             			"type":"postback",
             			"payload":"exercises_guide"
         			}
