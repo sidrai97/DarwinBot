@@ -8,6 +8,7 @@ const PythonShell = require('python-shell')
 const app = express()
 const token = (process.env.FB_VERIFY_TOKEN)
 const access = (process.env.FB_ACCESS_TOKEN)
+const windowCloseUrl = "https://www.messenger.com/closeWindow/?image_url=https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/22894529_1542725419106506_7073729451153698249_n.jpg?oh=749bddcf82ff0e41ccd1c74f6d75fcf5&oe=5AEE6884&display_text=Thankyou"
 
 app.set('port', (process.env.PORT || 5000)) 
 app.set('view engine', 'pug')
@@ -80,7 +81,8 @@ app.get('/storeDob', function(req, resp){
 			setTimeout(function(){},1000)
 		}
 	})
-	resp.send("Thankyou for your cooperation!!")
+	resp.redirect(windowCloseUrl)
+	//resp.send("Thankyou for your cooperation!!")
 })
 
 // Send Message to Facebook
