@@ -3,17 +3,17 @@ def getDbConnection():
     client=MongoClient('localhost', 27017)
     return client
 
-def insertUserData(document):
+def insertUserDataFromFb(document):
     client=getDbConnection()
     db=client.darwin
     db.users.insert(document)
     client.close()
     return
 
-def updateDOB(userid,dob):
+def setDetails(userid,dob,weight,height,location,injury):
     client=getDbConnection()
     db=client.darwin
-    result=db.users.update_one({'_id': userid}, {'$set': {'dob': dob}})
+    result=db.users.update_one({'_id': userid}, {'$set': {'dob': dob,'weight':weight,'height':height,'location':location,'injury':injury}})
     client.close()
     return
 
@@ -43,3 +43,12 @@ def ageCalc(dob):
     currentyear=datetime.date.today().year
     age=abs(birthyear-currentyear)
     return age
+
+def getDetails(userid):
+    client=getDbConnection()
+    db=client.darwin
+    result=db.users.find({"$and":[{'_id':userid},{'dob':{"$exists":True}}]},{"dob":1,"weight":1,"height":1,"location":1,"injury":1,"_id":0})
+    client.close()
+    if result.count() > 0:
+        return result[0]
+    return {}

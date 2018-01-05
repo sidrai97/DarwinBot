@@ -60,18 +60,35 @@ app.post('/webhook', function (req, res) {
 	}
 })
 
-app.get('/enterDob', function(req, resp) {
+app.get('/getDetails', function(req, resp){
 	var userid=req.query.userid
-	resp.render('dobView', {userid:userid})
+	var pypath = './process_message/getDetails.py'
+	var options = {mode:'text',args:[userid]}
+	PythonShell.run(pypath,options,function(err,results){
+		if(err) throw err
+		if(results.length > 0){
+			var messageData=results[0].trim().split(':')
+			resp.render('detailsView', {userid:messageData[0],dob:messageData[1],weight:messageData[2],height:messageData[3],location:String(messageData[4]),injury:messageData[5]})
+			console.log("received from python : "+messageData)
+		}
+		else{
+			resp.send('ID not found!')
+		}
+	})
 })
 
-app.get('/storeDob', function(req, resp){
+app.get('/setDetails', function(req, resp){
 	var userid=req.query.userid
 	var dob=req.query.dob
-	console.log(userid)
-	console.log(dob)
-	var pypath = './process_message/addDob.py'
-	var options = {mode:'text',args:[userid,dob]}
+	var weight=req.query.weight
+	var height=req.query.height
+	var location=req.query.location
+	var injury=req.query.injury
+	if(injury == undefined)
+		injury=[]
+	
+	var pypath = './process_message/addDetails.py'
+	var options = {mode:'text',args:[userid,dob,weight,height,location,injury]}
 	PythonShell.run(pypath,options,function(err,results){
 		if(err) throw err
 		for(var idx=0; idx<results.length; idx++){
