@@ -102,6 +102,19 @@ app.get('/setDetails', function(req, resp){
 	//resp.send("Thankyou for your cooperation!!")
 })
 
+// show webview for suggestions
+app.get('/getSuggestions', function(req,resp){
+	var userid=req.query.userid
+	var suggestions=JSON.parse(req.query.suggestions)
+	resp.render('symptomSuggestion', {userid:userid, suggestions:suggestions})
+})
+
+// pass on the selected options from suggestions for further diagnosis
+app.get('/setSuggestions', function(req,resp){
+	console.log(req.query)
+	resp.redirect(windowCloseUrl)
+})
+
 // Send Message to Facebook
 function callSendAPI(messageData) {
 	request({

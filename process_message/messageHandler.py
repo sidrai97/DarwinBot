@@ -1,5 +1,4 @@
 import json
-from commonVars import app_url
 
 def sendToNode(messageData):
     print(json.dumps(messageData))

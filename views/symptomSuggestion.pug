@@ -1,6 +1,6 @@
 html
     head
-        title Enter Your BirthDate
+        title Symptom Checker 💊
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1")
         link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
@@ -8,7 +8,11 @@ html
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
     
     body
-        form(action="/storeDob",method="GET")
+        form(action="/setSuggestions",method="GET")
             input(type="hidden", name="userid", value= userid)
-            Birthday: input(type="date", name="dob")
+            each obj in suggestions
+                input(type="checkbox", name= obj.id, value= obj.id)
+                span= obj.name
+                br
+            br
             input(type="submit")

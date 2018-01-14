@@ -26,7 +26,7 @@ def checkDOBExists(userId):
         return True
     return False
 
-def getAgeDob(userid):
+def getAgeGender(userid):
     client=getDbConnection()
     db=client.darwin
     result=db.users.find({'_id':str(userid)},{'gender':1,'dob':1,'_id':0})
@@ -47,8 +47,15 @@ def ageCalc(dob):
 def getDetails(userid):
     client=getDbConnection()
     db=client.darwin
-    result=db.users.find({"$and":[{'_id':userid},{'dob':{"$exists":True}}]},{"dob":1,"weight":1,"height":1,"location":1,"injury":1,"_id":0})
+    result=db.users.find({"$and":[{'_id':userid},{'dob':{"$exists":True}}]},{"gender":1,"dob":1,"weight":1,"height":1,"location":1,"injury":1,"_id":0})
     client.close()
     if result.count() > 0:
         return result[0]
     return {}
+
+def setSymptomPayload(userid,payload):
+    client=getDbConnection()
+    db=client.darwin
+    result=db.users.update_one({'_id': userid}, {'$set': {'symptoms_payload': payload}})
+    client.close()
+    return

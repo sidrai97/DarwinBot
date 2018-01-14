@@ -1,7 +1,6 @@
-import messageHandler, mongoCURD, json, symptomChecker, datetime
+import messageHandler, mongoCURD, json, symptomChecker, commonVars
 from argsLoader import loadCmdArgs
 from userProfile import userProfileApi
-from commonVars import app_url
 
 #load eventObj from command Line
 eventObject=json.loads(loadCmdArgs())
@@ -19,17 +18,32 @@ if 'postback' in eventObject:
         messageHandler.sendTextMessage(recipientId,messageText)
         # get userProfile and make an entry of user in db
         mongoCURD.insertUserDataFromFb(userProfileApi(recipientId))
-    elif eventObject['postback']['payload'] == 'symptom_checker':
         buttonsArray=[
             {
                 'type':'web_url',
-                'url':app_url+'/getDetails?userid='+recipientId,
+                'url':commonVars.app_url+'/getDetails?userid='+recipientId,
                 'title':'Click Here',
-                'webview_height_ratio':'tall'
+                'webview_height_ratio':'compact',
+                'webview_share_button':'hide'
             }
         ]
-        text='Ok but first, I need you to add/update your personal details'
+        text='I need you to add/update your personal details'
         messageHandler.sendButtonMessage(recipientId,text,buttonsArray)
+    elif eventObject['postback']['payload'] == "update_info":    
+        buttonsArray=[
+            {
+                'type':'web_url',
+                'url':commonVars.app_url+'/getDetails?userid='+recipientId,
+                'title':'Click Here',
+                'webview_height_ratio':'compact',
+                'webview_share_button':'hide'
+            }
+        ]
+        text='To add/update your personal details click the button attached'
+        messageHandler.sendButtonMessage(recipientId,text,buttonsArray)
+    elif eventObject['postback']['payload'] == 'symptom_checker':
+        messageText="Make sure i have your updated info. And then describe your symptoms such as stomach ache, headache or fatigue"
+        messageHandler.sendTextMessage(recipientId,messageText)
     elif eventObject['postback']['payload'] == 'plan_my_workout':
         messageText="Feature coming soon!"
         messageHandler.sendTextMessage(recipientId,messageText)
@@ -52,6 +66,9 @@ elif 'message' in eventObject:
     if 'text' in eventObject['message']:
         #symptom_checker
         messageText=eventObject['message']['text']
-        symptomChecker.userMsgParse(recipientId,messageText)
+        '''
+        Identify user message intent part remaining
+        '''
+        symptomChecker.parseSuggest(recipientId,messageText)
 else:
     messageHandler.sendTextMessage(recipientId,messageText)
