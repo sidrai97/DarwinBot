@@ -98,6 +98,7 @@ app.get('/setDetails', function(req, resp){
 			setTimeout(function(){},1000)
 		}
 	})
+	//close the webview
 	resp.redirect(windowCloseUrl)
 	//resp.send("Thankyou for your cooperation!!")
 })
@@ -111,7 +112,25 @@ app.get('/getSuggestions', function(req,resp){
 
 // pass on the selected options from suggestions for further diagnosis
 app.get('/setSuggestions', function(req,resp){
-	console.log(req.query)
+	var userid=req.query.userid
+	delete req.query.userid
+	var suggestionSelected=""
+	for(var key in req.query){
+		suggestionSelected+=req.query[key]+" "
+	}
+	// python execution
+	var pypath = './process_message/setSuggestions.py'
+	var options = {mode:'text',args:[userid,suggestionSelected]}
+	PythonShell.run(pypath,options,function(err,results){
+		if(err) throw err
+		for(var idx=0; idx<results.length; idx++){
+			var messageData=JSON.parse(results[idx])
+			console.log("received from python : "+messageData)
+			callSendAPI(messageData)
+			setTimeout(function(){},1000)
+		}
+	})
+	//close the webview
 	resp.redirect(windowCloseUrl)
 })
 

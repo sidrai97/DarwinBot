@@ -57,8 +57,19 @@ if 'postback' in eventObject:
         messageText="Feature coming soon!"
         messageHandler.sendTextMessage(recipientId,messageText)
     elif 'diagnosis_postback||' in eventObject['postback']['payload']:
-        messageText=eventObject['postback']['payload']
-        symptomChecker.userMsgParse(recipientId,messageText,True)
+        postback_payload = eventObject['postback']['payload'].split("||")
+        qid = postback_payload[2]
+        option = postback_payload[1]
+        temp=[]
+        if option == "yes":
+            temp.append({'id': qid, 'choice_id': 'present'})
+        elif option == "no":
+            temp.append({'id': qid, 'choice_id': 'absent'})
+        else:
+            temp.append({'id': qid, 'choice_id': 'unknown'})
+        payload=mongoCURD.getSymptomPayload(recipientId)
+        payload["symptoms_payload"]["evidence"]+=temp
+        symptomChecker.diagnosisHandler(userid,payload)
     else:
         messageText="Not sure what you were seeking! No problem try again."
         messageHandler.sendTextMessage(recipientId,messageText)

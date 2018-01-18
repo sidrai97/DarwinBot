@@ -79,5 +79,77 @@ def parseSuggest(userid,messageText):
 	messageHandler.sendButtonMessage(userid,messageText,buttonsArray)
 	return
 
-def diagnosisEndpoint():
+def diagnosisEndpoint(userid,payload):
+	r = requests.post(getApiUrl()+'diagnosis', data=json.dumps(payload), headers=getHeaders())
+	return r.json()
+
+def diagnosisStop(userid,diagnosisResult):
+	cid = diagnosisResult["conditions"][0]["id"] 
+	if diagnosisResult["should_stop"] == True:
+		conditionDetails(cid)
+		return True
+	elif diagnosisResult["conditions"][0]["probability"] >= 0.9:
+		conditionDetails(cid)
+		return True
+	else:
+		count = mongoCURD.getQuestionsCount(userid)
+		if len(count) == 0:
+			mongoCURD.setQuestionsCount(userid,0)
+			return False
+		elif count["questions_count"] == 15:
+			mongoCURD.setQuestionsCount(userid,0)
+			conditionDetails(cid)
+			return True
+		elif count["questions_count"] < 15:
+			mongoCURD.setQuestionsCount(userid,count["questions_count"]+1)
+			return False
+	return False
+
+def diagnosisQuestion(userid,diagnosisResult):
+	qtype = diagnosisResult["question"]["type"]
+	if qtype == "single":
+		qid = diagnosisResult['question']['items'][0]['id']
+		buttonsArray = [
+			{
+				'type':'postback',
+            	'title':'Yes',
+            	'payload':'diagnosis_postback||yes||'+qid
+            },
+            {
+                'type':'postback',
+                'title':'No',
+                'payload':'diagnosis_postback||no||'+qid
+            },
+			{
+                'type':'postback',
+                'title':'No',
+                'payload':'diagnosis_postback||dont_know||'+qid
+			}
+		]
+		messageText = diagnosisResult["question"]["text"]
+		messageHandler.sendButtonMessage(userid,messageText,buttonsArray)
+	elif qtype == "group_single":
+		pass
+	elif qtype == "group_multiple":
+		pass
+	return
+
+def diagnosisHandler(userid,payload):
+	mongoCURD.setSymptomPayload(userid,payload)
+	diagnosisResult=diagnosisEndpoint(payload)
+	#check to stop
+	check = diagnosisStop(userid,diagnosisResult)
+	if check == True:
+		return
+	# send questions
+	diagnosisQuestion(userid,diagnosisResult)
+	return
+
+def conditionDetails(userid,cid):
+	r = requests.get(getApiUrl()+'conditions/'+cid, headers=getHeaders())
+	result = r.json()
+	text = result["common_name"]
+	hint = result["extras"]["hint"]
+	messageHandler.sendTextMessage(userid,text)
+	messageHandler.sendTextMessage(userid,hint)
 	return

@@ -59,3 +59,28 @@ def setSymptomPayload(userid,payload):
     result=db.users.update_one({'_id': userid}, {'$set': {'symptoms_payload': payload}})
     client.close()
     return
+
+def getSymptomPayload(userid):
+    client=getDbConnection()
+    db=client.darwin
+    result=db.users.find({'_id': userid}, {'symptoms_payload':1,'_id':0})
+    client.close()
+    if result.count() > 0:
+        return result[0]
+    return {}
+
+def getQuestionsCount(userid):
+    client=getDbConnection()
+    db=client.darwin
+    result=db.users.find({'_id': userid}, {'questions_count':1,'_id':0})
+    client.close()
+    if result.count() > 0:
+        return result[0]
+    return {}
+
+def setQuestionsCount(userid,count):
+    client=getDbConnection()
+    db=client.darwin
+    result=db.users.update_one({'_id': userid}, {'$set': {'questions_count': count}})
+    client.close()
+    return
