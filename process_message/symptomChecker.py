@@ -53,12 +53,12 @@ def parseSuggest(userid,messageText):
 	# get user details from db
 	gender,age,evidence = getRiskFactors(userid)
 	evidence += temp
+	payload = {'sex':gender, 'age':age, 'evidence':evidence}
 	# get suggestions based on mentions
 	suggestedSymptoms = suggestEndpoint(gender,age,evidence)
 	if len(suggestedSymptoms) < 1:
 		# yaha se jaega diagnosis
-		messageText = "kuch nai mila"
-		messageHandler.sendTextMessage(userid,messageText)
+		diagnosisHandler(userid,payload)
 		return
 	# send mentions found and suggest more symtoms
 	messageText = "You have reported\n"
@@ -83,13 +83,14 @@ def diagnosisEndpoint(userid,payload):
 	r = requests.post(getApiUrl()+'diagnosis', data=json.dumps(payload), headers=getHeaders())
 	return r.json()
 
-def diagnosisStop(userid,diagnosisResult):
-	cid = diagnosisResult["conditions"][0]["id"] 
+def diagnosisStop(userid,diagnosisResult): 
 	if diagnosisResult["should_stop"] == True:
-		conditionDetails(cid)
+		cid = diagnosisResult["conditions"][0]["id"]
+		conditionDetails(userid,cid)
 		return True
 	elif diagnosisResult["conditions"][0]["probability"] >= 0.9:
-		conditionDetails(cid)
+		cid = diagnosisResult["conditions"][0]["id"]
+		conditionDetails(userid,cid)
 		return True
 	else:
 		count = mongoCURD.getQuestionsCount(userid)
@@ -97,8 +98,9 @@ def diagnosisStop(userid,diagnosisResult):
 			mongoCURD.setQuestionsCount(userid,0)
 			return False
 		elif count["questions_count"] == 15:
+			cid = diagnosisResult["conditions"][0]["id"]
 			mongoCURD.setQuestionsCount(userid,0)
-			conditionDetails(cid)
+			conditionDetails(userid,cid)
 			return True
 		elif count["questions_count"] < 15:
 			mongoCURD.setQuestionsCount(userid,count["questions_count"]+1)
@@ -122,21 +124,40 @@ def diagnosisQuestion(userid,diagnosisResult):
             },
 			{
                 'type':'postback',
-                'title':'No',
+                'title':"Don't know",
                 'payload':'diagnosis_postback||dont_know||'+qid
 			}
 		]
 		messageText = diagnosisResult["question"]["text"]
 		messageHandler.sendButtonMessage(userid,messageText,buttonsArray)
-	elif qtype == "group_single":
-		pass
-	elif qtype == "group_multiple":
-		pass
+	else:
+		temp = diagnosisResult["question"]["items"]
+		items = []
+		for t in temp:
+			items.append({"id":t["id"], "name":t["name"]})
+		url = ""
+		if qtype == "group_single":
+			url = commonVars.app_url+'/groupSingle?userid='+userid+'&options='+json.dumps(items)
+		elif qtype == "group_multiple":
+			url = commonVars.app_url+'/groupMultiple?userid='+userid+'&options='+json.dumps(items)
+		buttonsArray = [
+			{
+                'type':'web_url',
+            	'url': url,
+                'title':'Options Here!',
+                'webview_height_ratio':'compact',
+                'webview_share_button':'hide'
+            }
+		]
+		messageText = diagnosisResult["question"]["text"]
+		messageHandler.sendButtonMessage(userid,messageText,buttonsArray)
 	return
 
 def diagnosisHandler(userid,payload):
 	mongoCURD.setSymptomPayload(userid,payload)
-	diagnosisResult=diagnosisEndpoint(payload)
+	if "symptoms_payload" in payload:
+		payload = payload["symptoms_payload"]
+	diagnosisResult=diagnosisEndpoint(userid,payload)
 	#check to stop
 	check = diagnosisStop(userid,diagnosisResult)
 	if check == True:
@@ -148,7 +169,7 @@ def diagnosisHandler(userid,payload):
 def conditionDetails(userid,cid):
 	r = requests.get(getApiUrl()+'conditions/'+cid, headers=getHeaders())
 	result = r.json()
-	text = result["common_name"]
+	text = 'My algorithm suggests that you have symptoms of '+result["common_name"]
 	hint = result["extras"]["hint"]
 	messageHandler.sendTextMessage(userid,text)
 	messageHandler.sendTextMessage(userid,hint)

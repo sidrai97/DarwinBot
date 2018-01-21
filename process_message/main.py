@@ -69,7 +69,7 @@ if 'postback' in eventObject:
             temp.append({'id': qid, 'choice_id': 'unknown'})
         payload=mongoCURD.getSymptomPayload(recipientId)
         payload["symptoms_payload"]["evidence"]+=temp
-        symptomChecker.diagnosisHandler(userid,payload)
+        symptomChecker.diagnosisHandler(recipientId,payload)
     else:
         messageText="Not sure what you were seeking! No problem try again."
         messageHandler.sendTextMessage(recipientId,messageText)

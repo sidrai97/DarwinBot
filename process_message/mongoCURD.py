@@ -54,6 +54,8 @@ def getDetails(userid):
     return {}
 
 def setSymptomPayload(userid,payload):
+    if "symptoms_payload" in payload:
+        payload = payload["symptoms_payload"]
     client=getDbConnection()
     db=client.darwin
     result=db.users.update_one({'_id': userid}, {'$set': {'symptoms_payload': payload}})

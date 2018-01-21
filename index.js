@@ -134,6 +134,57 @@ app.get('/setSuggestions', function(req,resp){
 	resp.redirect(windowCloseUrl)
 })
 
+app.get('/groupSingle', function(req, resp){
+	var userid=req.query.userid
+	var options=JSON.parse(req.query.options)
+	resp.render('groupSingle', {userid:userid, options:options})
+})
+app.get('/groupMultiple', function(req, resp){
+	var userid=req.query.userid
+	var options=JSON.parse(req.query.options)
+	resp.render('groupMultiple', {userid:userid, options:options})
+})
+app.get('/setGroupSingle', function(req,resp){
+	var userid=req.query.userid
+	var optionSelected=req.query.single
+	// python execution
+	var pypath = './process_message/setGroupSingle.py'
+	var options = {mode:'text',args:[userid,optionSelected]}
+	PythonShell.run(pypath,options,function(err,results){
+		if(err) throw err
+		for(var idx=0; idx<results.length; idx++){
+			var messageData=JSON.parse(results[idx])
+			console.log("received from python : "+messageData)
+			callSendAPI(messageData)
+			setTimeout(function(){},1000)
+		}
+	})
+	//close the webview
+	resp.redirect(windowCloseUrl)
+})
+app.get('/setGroupMultiple', function(req,resp){
+	var userid=req.query.userid
+	delete req.query.userid
+	var optionSelected=""
+	for(var key in req.query){
+		optionSelected+=req.query[key]+" "
+	}
+	// python execution
+	var pypath = './process_message/setGroupMultiple.py'
+	var options = {mode:'text',args:[userid,optionSelected]}
+	PythonShell.run(pypath,options,function(err,results){
+		if(err) throw err
+		for(var idx=0; idx<results.length; idx++){
+			var messageData=JSON.parse(results[idx])
+			console.log("received from python : "+messageData)
+			callSendAPI(messageData)
+			setTimeout(function(){},1000)
+		}
+	})
+	//close the webview
+	resp.redirect(windowCloseUrl)
+})
+
 // Send Message to Facebook
 function callSendAPI(messageData) {
 	request({
