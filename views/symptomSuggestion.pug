@@ -3,16 +3,20 @@ html
         title Symptom Checker 💊
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(name="theme-color", content="#427BBE")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
         link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
     
-    body
-        form(action="/setSuggestions",method="GET")
-            input(type="hidden", name="userid", value= userid)
-            each obj in suggestions
-                input(type="checkbox", name= obj.id, value= obj.id)
-                span= obj.name
+    body(class="container-fluid")
+        div(class="form-group")
+            form(action="/setSuggestions",method="GET")
+                input(type="hidden", name="userid", value= userid)
+                each obj in suggestions
+                    label(class="checkbox-inline")
+                        input(type="checkbox", name= obj.id, value= obj.id)
+                    span= obj.name
+                    br
                 br
-            br
-            input(type="submit")
+                input(class="form-control btn btn-info", type="submit")
