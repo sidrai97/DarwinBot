@@ -46,9 +46,14 @@
         			{
             			"title":"Exercises Encyclopedia 📔",
             			"type":"postback",
-            			"payload":"exercises_guide"
+            			"payload":"exercise_encyclopedia"
         			}
         		]
+    		},
+    		{
+    			"title":"Update Info",
+            	"type":"postback",
+            	"payload":"update_info"
     		}
         ]
     }

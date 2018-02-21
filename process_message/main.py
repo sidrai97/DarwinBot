@@ -53,7 +53,7 @@ if 'postback' in eventObject:
     elif eventObject['postback']['payload'] == 'my_workout_statistics':
         messageText="Feature coming soon!"
         messageHandler.sendTextMessage(recipientId,messageText)
-    elif eventObject['postback']['payload'] == 'exercises_guide':
+    elif eventObject['postback']['payload'] == 'exercise_encyclopedia':
         messageText="Feature coming soon!"
         messageHandler.sendTextMessage(recipientId,messageText)
     elif 'diagnosis_postback||' in eventObject['postback']['payload']:
