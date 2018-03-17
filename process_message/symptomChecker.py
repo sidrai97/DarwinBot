@@ -54,6 +54,10 @@ def parseSuggest(userid,messageText):
 	gender,age,evidence = getRiskFactors(userid)
 	evidence += temp
 	payload = {'sex':gender, 'age':age, 'evidence':evidence}
+	messageText = "You have reported\n"
+	for i in mentions:
+		messageText += " * "+i["common_name"]+" "+i["choice_id"]+"\n"
+	messageHandler.sendTextMessage(userid,messageText)
 	# get suggestions based on mentions
 	suggestedSymptoms = suggestEndpoint(gender,age,evidence)
 	if len(suggestedSymptoms) < 1:
@@ -61,10 +65,7 @@ def parseSuggest(userid,messageText):
 		diagnosisHandler(userid,payload)
 		return
 	# send mentions found and suggest more symtoms
-	messageText = "You have reported\n"
-	for i in mentions:
-		messageText += " * "+i["common_name"]+"\n"
-	messageText += "Other users with your symptoms also reported following conditions"
+	messageText= "Other users with your symptoms also reported following conditions"
 	payload = {'sex':gender, 'age':age, 'evidence':evidence}
 	mongoCURD.setSymptomPayload(userid,payload)
 	buttonsArray=[

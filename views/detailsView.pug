@@ -1,57 +1,57 @@
 html
-    head
-        title Add/Update Your Personal Details
-        meta(charset="utf-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1")
-        meta(name="theme-color", content="#427BBE")
-        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
-    body
-        div(class="container-fluid")
-            form(action="/setDetails",method="GET")
-                input(type="hidden", name="userid", value= userid)
-                div(class="form-group")
-                    label(for='dob') Date of Birth: 
-                    input(class="form-control", type="date", name="dob", required, value= dob)
-                br
-                div(class="form-group")
-                    label(for='weight') Weight (kgs):
-                    input(class="form-control",type="number" step="0.1" name="weight", required, value= weight)
-                br
-                div(class="form-group")
-                    label(for='height') Height (meters):
-                    input(class="form-control",type="number" step="0.1" name="height", req/uired, value= height)
-                br
-                div(class="form-group")
-                    label(for='location') Location:
-                    select(class="form-control", name="location", id="location", required)
-                        option(value="p_13") North America without Mexico
-                        option(value="p_14") Latin and South America
-                        option(value="p_15") Europe
-                        option(value="p_16") Northern Africa
-                        option(value="p_17") Central Africa
-                        option(value="p_18") Southern Africa
-                        option(value="p_19") Australia and Oceania
-                        option(value="p_20") Russia, Kazakhstan and Mongolia
-                        option(value="p_21") Middle East
-                        option(value="p_22") India, China and Southeastern Asia
-                br
-                div(class="form-group")
-                    label(for='injury') Any Injuries / risks / traumas:
-                    select(class="form-control",name="injury", id="injury", multiple)
-                        option(value="p_9") Hypertension
-                        option(value="p_10") High cholesterol
-                        option(value="p_28") Smoking
-                        option(value="p_147") Physical injury
-                        option(value="p_144") Abdominal trauma
-                        option(value="p_145") Acceleration-deceleration injury
-                        option(value="p_146") Back injury
-                        option(value="p_74") Craniocerebral trauma
-                        option(value="p_136") Skeletal trauma, chest
-                        option(value="p_53") Skeletal trauma, limb
-                br
-                input(class="form-control btn btn-info", type="submit")
-        script.
-            document.getElementById('location').value='#{location}';
-            $("#injury").val('#{injury}'.split(','));
+	head
+		title Add/Update Your Personal Details
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name="theme-color", content="#427BBE")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+	body
+		div(class="container-fluid")
+			form(action="/setDetails",method="GET")
+				input(type="hidden", name="userid", value= userid)
+				div(class="form-group")
+					label(for='dob') Date of Birth: 
+					input(class="form-control", type="date", name="dob", required, value= dob)
+				br
+				div(class="form-group")
+					label(for='weight') Weight (kgs):
+					input(class="form-control",type="number", step="0.1" ,name="weight", required, value= weight)
+				br
+				div(class="form-group")
+					label(for='height') Height (meters):
+					input(class="form-control",type="number", step="0.1" ,name="height", required, value= height)
+				br
+				div(class="form-group")
+					label(for='location') Location:
+					select(class="form-control", name="location", id="location", required)
+						option(value="p_13") North America without Mexico
+						option(value="p_14") Latin and South America
+						option(value="p_15") Europe
+						option(value="p_16") Northern Africa
+						option(value="p_17") Central Africa
+						option(value="p_18") Southern Africa
+						option(value="p_19") Australia and Oceania
+						option(value="p_20") Russia, Kazakhstan and Mongolia
+						option(value="p_21") Middle East
+						option(value="p_22") India, China and Southeastern Asia
+				br
+				div(class="form-group")
+					label(for='injury') Any Injuries / risks / traumas:
+					select(class="form-control",name="injury", id="injury", multiple)
+						option(value="p_9") Hypertension
+						option(value="p_10") High cholesterol
+						option(value="p_28") Smoking
+						option(value="p_147") Physical injury
+						option(value="p_144") Abdominal trauma
+						option(value="p_145") Acceleration-deceleration injury
+						option(value="p_146") Back injury
+						option(value="p_74") Craniocerebral trauma
+						option(value="p_136") Skeletal trauma, chest
+						option(value="p_53") Skeletal trauma, limb
+				br
+				input(class="form-control btn btn-info", type="submit")
+		script.
+			document.getElementById('location').value='#{location}';
+			$("#injury").val('#{injury}'.split(','));

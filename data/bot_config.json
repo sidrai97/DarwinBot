@@ -27,7 +27,7 @@
             			"type":"nested",
             			"call_to_actions":[
             				{
-            					"title":"Plan my workout 📝",
+            					"title":"Workout Log 📝",
             					"type":"postback",
             					"payload":"plan_my_workout"
             				},

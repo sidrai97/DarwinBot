@@ -36,4 +36,22 @@ def sendButtonMessage(recipientId,text,buttonsArray=None):
 		}
 	}
     sendToNode(messageData)
-    return    
+    return
+
+def sendGenericMessage(recipientId,elements):
+    messageData = {
+		'recipient': {
+			'id': recipientId
+		},
+		'message':{
+			'attachment':{
+				'type':"template",
+				'payload':{
+					'template_type':"generic",
+					'elements':elements
+				}
+			}
+		}
+	}
+    sendToNode(messageData)
+    return

@@ -1,0 +1,64 @@
+html
+	head
+		title Exercises Encyclopedia 📔
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name="theme-color", content="#427BBE")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+	body
+		div(class="container")
+			form(action="/setExerciseEncyclopedia",method="GET")
+				input(type="hidden", name="userid", value= userid)
+				h3 Difficulty Level
+				select(class="multiselect-ui form-control",name="level", id="level", multiple)
+						option(value="beginner") BEGINNER
+						option(value="intermediate") INTERMEDIATE
+						option(value="expert") EXPERT
+				hr
+				h3 Muscle Group
+				select(class="multiselect-ui form-control",name="muscle", id="muscle", multiple)
+						option(value="chest") Chest
+						option(value="shoulders") Shoulders
+						option(value="lats") Lats
+						option(value="middleback") Middle Back
+						option(value="lowerback") Lower Back
+						option(value="traps") Traps
+						option(value="neck") Neck
+						option(value="biceps") Biceps
+						option(value="triceps") Triceps
+						option(value="forearms") Forearms
+						option(value="quadriceps") Quadriceps
+						option(value="hamstrings") Hanstrings
+						option(value="glutes") Glutes
+						option(value="calves") Calves
+						option(value="abdominals") Abdominals
+				hr
+				h3 Exercise Type
+				select(class="multiselect-ui form-control",name="type", id="type", multiple)
+						option(value="strength") Strength
+						option(value="stretching") Stretching
+						option(value="olympicweightlifting") Olympic Weight-Lifting
+						option(value="strongman") Strongman
+						option(value="plyometrics") Plyometrics
+						option(value="cardio") Cardio
+						option(value="powerlifting") Power Lifting 		
+				hr
+				h3 Equipment
+				select(class="multiselect-ui form-control",name="equipment", id="equipment", multiple)
+						option(value="bodyonly") Body Only
+						option(value="dumbbell") Dumbbells 
+						option(value="barbell")  Barbell
+						option(value="foamroll") Foam Roll
+						option(value="cable") Cable
+						option(value="e-zcurlbar") E-Z Curlbar 
+						option(value="machine") Machine
+						option(value="kettlebells") Kettle Bells
+						option(value="bands") Bands
+						option(value="medicineball") Medicine Ball
+						option(value="exerciseball") Exercise Ball
+						option(value="none") None
+						option(value="other") Other	
+				br
+				input(class="form-control btn btn-info", type="submit")

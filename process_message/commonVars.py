@@ -1,4 +1,4 @@
-app_url='https://33746ba5.ngrok.io'
+app_url='https://79d44a61.ngrok.io'
 infermedica_app_id='3fec2816'
 infermedica_app_key='73414234b82c58cd63904e19eef2d70e'
 diagnosis_threshold=0.9

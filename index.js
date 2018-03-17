@@ -103,6 +103,105 @@ app.get('/setDetails', function(req, resp){
 	//resp.send("Thankyou for your cooperation!!")
 })
 
+//Exercise Encyclopedia
+app.get('/getExerciseEncyclopedia', function(req, resp){
+	var userid=req.query.userid
+	resp.render('exerciseEncyclopedia', {userid:userid})
+})
+app.get('/setExerciseEncyclopedia', function(req, resp){
+	var userid=req.query.userid
+	var level=req.query.level
+	if(level == undefined)
+		level=""
+	else if(typeof level == "object")
+	{
+		var temp="";
+		for(var i = 0; i < level.length; i++) 
+		{
+			if(i == 0){temp=level[i];}
+			else{temp=temp+","+level[i];}
+		}
+		level=temp;
+	}
+	var muscle=req.query.muscle
+	if(muscle == undefined)
+		muscle=""
+	else if(typeof muscle == "object")
+	{
+		var temp="";
+		for(var i = 0; i < muscle.length; i++) 
+		{
+			if(i == 0){temp=muscle[i]}
+			else{temp=temp+","+muscle[i];}
+		}
+		muscle=temp;
+	}
+	var type=req.query.type
+	if(type == undefined)
+		type=""
+	else if(typeof type == "object")
+	{
+		var temp="";
+		for(var i = 0; i < type.length; i++) 
+		{
+			if(i == 0){temp=type[i];}
+			else{temp=temp+","+type[i];}
+		}
+		type=temp;
+	}
+	var equipment=req.query.equipment
+	if(equipment == undefined)
+		equipment=""
+	else if(typeof equipment == "object")
+	{
+		var temp="";
+		for(var i = 0; i < equipment.length; i++) 
+		{
+			if(i == 0){temp=equipment[i];}
+			else{temp=temp+","+equipment[i];}
+		}
+		equipment=temp;
+	}
+	var pypath = './process_message/getExercises.py'
+	var options = {mode:'text',args:[userid,level,muscle,type,equipment]}
+	PythonShell.run(pypath,options,function(err,results){
+		if(err) throw err
+		for(var idx=0; idx<results.length; idx++){
+			var messageData=results[idx]
+			messageData=messageData.replace(/'/g,'"')
+			messageData=JSON.parse(messageData)
+			if(messageData.length > 0)
+				resp.render('exerciseResults', {userid:userid,edata:messageData})
+			else
+				resp.send('No data found! Try Again...')
+		}
+	})
+})
+app.get('/getExerciseDetails', function(req, resp){
+	var userid=req.query.userid
+	var id=req.query.id
+	var pypath = './process_message/getExercisesDetails.py'
+	var options = {mode:'text',args:[userid,id]}
+	PythonShell.run(pypath,options,function(err,results){
+		if(err) throw err
+		for(var idx=0; idx<results.length; idx++){
+			var messageData=JSON.parse(results[idx])
+			console.log("received from python : "+messageData)
+			callSendAPI(messageData)
+			setTimeout(function(){},1000)
+		}
+	})
+	//close the webview
+	resp.redirect(windowCloseUrl)
+})
+app.get('/viewSteps', function(req, resp){
+	var name=req.query.name
+	var steps=req.query.steps
+	console.log(steps)
+	steps=JSON.parse(steps)
+	resp.render('viewSteps', {name:name,steps:steps})
+})
+
 // show webview for suggestions
 app.get('/getSuggestions', function(req,resp){
 	var userid=req.query.userid

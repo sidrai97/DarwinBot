@@ -12,8 +12,7 @@ html
 			form(action="/setGroupSingle",method="GET")
 				input(type="hidden", name="userid", value= userid)
 				each obj in options
-					label(class="radio-inline")
-						input(type="radio", name="single", value= obj.id)
+					input(type="radio", name="single", value= obj.id)
 					span= obj.name
 					br
 				br

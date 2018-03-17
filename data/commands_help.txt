@@ -3,3 +3,7 @@ heroku config
 mongo ds141185.mlab.com:41185/heroku_4n5cd7x4 -p darwinbot17
 pip show packagename
 npm install packagename --save
+
+persistent menu
+https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAB6w27caYQBAIPctwcsOfcap5AHnDLXEtYZBtjYgwrkcBrUDI4IZBSYZCDXjZBSiXw82qFzOc1MszoSHJtANVqTA6N3JzJO92OHKlCR3acwM6IlhhWgKGpRj2CIZALUVZC0OIX9RSgmQzlnHQIBUsk2R4IvXY5lRO9dIwC0emji4HEFaGOLCs
+Content-Type:application/json

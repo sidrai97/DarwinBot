@@ -1,4 +1,6 @@
-import messageHandler, mongoCURD, json, symptomChecker, commonVars
+import sys
+sys.path.append("C:/Users/sid/Desktop/Darwin/DarwinBot/process_message/intentClassifier")
+import messageHandler, mongoCURD, json, symptomChecker, commonVars, predict_merge, textblob
 from argsLoader import loadCmdArgs
 from userProfile import userProfileApi
 
@@ -54,8 +56,17 @@ if 'postback' in eventObject:
         messageText="Feature coming soon!"
         messageHandler.sendTextMessage(recipientId,messageText)
     elif eventObject['postback']['payload'] == 'exercise_encyclopedia':
-        messageText="Feature coming soon!"
-        messageHandler.sendTextMessage(recipientId,messageText)
+        buttonsArray=[
+            {
+                'type':'web_url',
+                'url':commonVars.app_url+'/getExerciseEncyclopedia?userid='+recipientId,
+                'title':'Door to 💪 knowledge',
+                'webview_height_ratio':'tall',
+                'webview_share_button':'hide'
+            }
+        ]
+        text="To open the Encyclopedia you have to click the button below!!"
+        messageHandler.sendButtonMessage(recipientId,text,buttonsArray)
     elif 'diagnosis_postback||' in eventObject['postback']['payload']:
         postback_payload = eventObject['postback']['payload'].split("||")
         qid = postback_payload[2]
@@ -77,9 +88,41 @@ elif 'message' in eventObject:
     if 'text' in eventObject['message']:
         #symptom_checker
         messageText=eventObject['message']['text']
-        '''
-        Identify user message intent part remaining
-        '''
-        symptomChecker.parseSuggest(recipientId,messageText)
+        messageText=messageText.lower()
+        
+        #spelling message correction
+        messageText=textblob.TextBlob(messageText)
+        messageText=str(messageText.correct())
+        
+        #Identify user message intent
+        label = predict_merge.predict_unseen_data(messageText)
+        if label == "symptom_checker":
+            symptomChecker.parseSuggest(recipientId,messageText)
+        elif label == "exercise_encyclopedia":
+            buttonsArray=[
+                {
+                    'type':'web_url',
+                    'url':commonVars.app_url+'/getExerciseEncyclopedia?userid='+recipientId,
+                    'title':'Door to 💪 knowledge',
+                    'webview_height_ratio':'tall',
+                    'webview_share_button':'hide'
+                }
+            ]
+            text="To open the Encyclopedia you have to click the button below!!"
+            messageHandler.sendButtonMessage(recipientId,text,buttonsArray)
+        elif label == "plan_workout":
+            messageHandler.sendTextMessage(recipientId,label)
+        elif label == "progress_stats":
+            messageHandler.sendTextMessage(recipientId,label)
+        elif label == "update_details":
+            messageHandler.sendTextMessage(recipientId,label)
+        elif label == "workout_recommendation":
+            messageHandler.sendTextMessage(recipientId,label)
+        elif label == "help":
+            messageHandler.sendTextMessage(recipientId,label)
+        elif label == "greetings":
+            messageHandler.sendTextMessage(recipientId,label)
+        elif label == "end_conversation":
+            messageHandler.sendTextMessage(recipientId,label)
 else:
     messageHandler.sendTextMessage(recipientId,messageText)
