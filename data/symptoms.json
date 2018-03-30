@@ -1,0 +1,4606 @@
+﻿[
+  {
+    "text": "Abdominal guarding",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal mass",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal mass, after pregnancy or the removal of molar pregnancy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, before menstrual period",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, burning or gnawing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, chronic",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, diffuse",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, epigastric",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, exacerbating after a meal",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, exacerbating after caffeine consumption",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, exacerbating during coughing or movement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, exacerbating during deep breath",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, exacerbating on an empty stomach",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, left lower quadrant",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, left upper quadrant",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, mild",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, moderate",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, pelvic",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, periumbilical",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, radiation to right shoulder blade",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, reduced by defecation or relieving flatulence",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, right lower quadrant",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, right upper quadrant",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, right upper quadrant, exacerbated by deep inhalation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, right upper quadrant, radiation to the back",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, severe",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, sharp and stabbing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, sudden",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal pain, with flare-ups and remissions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal tenderness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal tenderness, left upper quadrant",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal tenderness, lower",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abdominal tenderness, right upper quadrant",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abnormal foveal avascular zone",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abnormal vaginal bleeding",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abnormal vaginal bleeding, 4-5 month of pregnancy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abnormal vaginal bleeding, postmenopausal",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Abscess",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Absence of deep reflexes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Accelerated breathing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Achilles tendon hyperreflexia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Activity related to sex despite negative consequences",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Adenoid face",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Agitation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Agnosia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Agoraphobia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Agraphia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Alcohol craving",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Alcohol tolerance",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Alcohol withdrawal syndrome",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Allelomimetic behavior, allomimetic behavior",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Allen-Cleckley sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Alogia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Altered defecation rhythm",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Amenorrhea",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Amenorrhea, primary",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Amenorrhea, secondary",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Amenorrhea, secondary, for at least 12 months",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Amusia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Anemia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Angular cheilitis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Anhedonia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Anhidrosis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Anhidrosis, face, unilateral",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Anisocoria",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Ankle bruising",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Annular skin lesions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Anomic aphasia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Anorectal pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Anxiety attack",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Apathy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Aphasia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Aphonia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Aponeurotic reflex",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Appetite for salty foods",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Apraxia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Arthropathy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Articular edema and pain of both hands or feet",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Ascites",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Asymmetry of a skin mole or birthmark",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Ataxia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Atonic bladder",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Atrophy or diminishing of both testicles",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Auditory verbal agnosia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Auscultative rales over the thorax",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Avoiding actions, places or people that bring back memories of trauma",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Avoiding eating and drinking in public",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Avoiding eating in someone's presence",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Avoiding public appearances",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Avoiding talking to authority figures",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Avoiding thoughts, feelings, conversations related to traumatic experience",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Axillary or inguinal freckles",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Babinski sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Back pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Back pain, exacerbating after physical exertion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Back pain, lasting at least a few hours",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Back pain, lumbar",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Back pain, lumbar, exacerbating during the night",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Back pain, lumbar, radiates to back of the thigh",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Back pain, lumbar, radiating to the groin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Back pain, severe",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Back pain, subsides during rest",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Back pain, sudden",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Back pain, thoracic",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Back pain, with flare-ups and remissions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Behavioral changes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Behavioral changes, personality",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Behavior ignoring consequences and social norms",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Belching",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bilateral absence of Achilles tendon reflex",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bilateral limb apraxia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bilateral muscle paralysis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Binge eating attacks",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bing sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bizarre delusion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Black stools",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bladder not emptying completely",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bladder sphincter dysfunction",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bleeding after intercourse",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bleeding from anus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bleeding gums",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bleeding into muscles",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Blepharoptosis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Blisters",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bloating",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Blood in stool",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Blood in urine",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Blood pressure fluctuation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Blunted affect",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Blurred vision",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bone deformation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bone pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bowel incontinence",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bowel sounds, decreased",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bowel sounds, hyperactive, high-pitched",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bradycardia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Breast tenderness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Breast tightness or pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Broken capillaries",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Broken hair",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Brown nail discoloration",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Brudzinski sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bruises",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Buccofacial or orofacial apraxia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Bulla",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Burning during urination",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Burning skin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Burning skin, face",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Burning tongue",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cafe au lait macules",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Calcification of the tympanic membrane",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Calf muscle spasms",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cardiac murmurs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cardiomegaly",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Carotid bruit",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Ceasing or limiting alcohol consumption",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cervical dystonia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chaddock sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Change in color of a skin mole or birthmark",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Change in color of a tooth",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Change in handwriting",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Change in shape of a skin mole or birthmark",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chemosis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, 2-5 minutes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, continue after rest",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, diffuse",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, during exertion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, exacerbated by stress",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, exacerbating during movement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, exacerbating with deep breath or cough",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, lasting at least a few hours",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, lasting longer than 30 minutes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, radiating between shoulder blades",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, radiating to left arm",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, radiating to left shoulder",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, radiating to neck",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, severe",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, stabbing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, subsides during rest",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, substernal",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, sudden",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, worsens on palpation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chest pain, worsens on palpation of costochondral joints",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cheyne-Stokes respiration",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Childbirth",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chills",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Choking during sleep",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chorea",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Chvostek sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cigarette smoking",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cigarette smoking during illness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Clasp-knife spasticity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Claudication in upper leg",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Clearing the throat",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Clicking sounds in the jaw joint when opening or closing the mouth",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Clogged ear",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Close family or friends pointing out excessive drinking",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Club-foot",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Coated tonsils",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Coating on tongue",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cogwheel muscle rigidity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cold feet and toes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cold hands or fingers",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cold sensitivity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Color vision deficiency",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Compulsive behavior",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Confabulation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Confusion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Conjunctival pallor",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Conjunctival pallor, sudden",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Consciousness disturbances",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Constant need for sex",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Constipation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Constipation, long lasting",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Contentiousness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Convergent strabismus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Convulsions or headache accompanied or preceded by buzzing or whistling",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Convulsions or headache preceded by olfactory hallucinations",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Corneal reflex weak or absent",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cornell's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cough",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cough, attacks",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cough, dry",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cough, lasting less than 3 weeks",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cough, lasting more than 8 weeks",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cough, productive",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cough, productive in the morning",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cough, productive with pink frothy sputum",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cough, productive with purulent sputum",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Creaking of joint during movement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cutaneous mass, soft",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cyanosis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cyanosis, fingers",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cyanosis, fingers, after exposure to stress or cold",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cyanosis under the eyes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Cystoid macular edema",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Damage to 2 separate areas of innervation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dance's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dandruff",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Darier sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dark-red spots in optic disc vessels",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dark urine",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Decreased breast size",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Decreased intensity of breath sounds",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Decreased intensity of breath sounds, right basilar lung zones",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Decreased libido",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Decreased motivation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Decreased need for sleep",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Decreased pupillary light reflex",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Decreased skin turgor",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Decreased tear production",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Decreased tongue motility",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Decreased vitality for at least 2 weeks",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Decrease of visual acuity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Deepening of periodontal pockets",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Deepening of voice",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Deep filling of treated tooth",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Deep tendon reflexes, decreased",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Deep tendon reflexes, increased",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Delusion of guilt or sin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Delusion of impoverishment",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Delusions of grandeur",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Delusions of impact",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Delusions of influence",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Delusions of persecution",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Delusions of reference",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Demarcation of retinal detachment (pigmented or nonpigmented)",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dennie-Morgan fold",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dental plaque",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Depressed mood",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Depressed mood, persistent",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, aggravated by stress",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, at the point of contact with buttons, fasteners or cosmetics",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, chancre",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, entire skin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, exacerbated by alcohol consumption",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, forming a crust",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, forming a line",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, localization near sebaceous glands",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, located in the genital area",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, located in the mouth",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, located on the face",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, painful",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, palms or soles",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, preceded by pain or itching",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, recurring during infections or menstrual period",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, rough and irregular surface",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dermatological changes, with flare-ups and remissions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diarrhea",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diarrhea, foamy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diarrhea, mainly at night",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diarrhea, rice-water",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Difference in size of testicles",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Difficulty acquiring new information",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Difficulty biting and chewing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Difficulty bonding with infant",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Difficulty completely closing one eye",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Difficulty determining which tooth aches",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Difficulty doing single-leg heel raise",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Difficulty not smoking first cigarette of the day",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Difficulty refraining from smoking cigarettes where not permitted",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Difficulty retracting foreskin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diminished appetite",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diminished eye motility in the same direction",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diminished fear responses",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diminished superficial reflexes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diplopia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diplopia while looking down and medially",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diplopia while looking in any direction",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diplopia with horizontal image dispersion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diplopia with vertical or oblique image dispersion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Discharge from ear",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Discharge from ear, bloody",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Discharge from periodontal pockets",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Discharge from urethra",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Discharge in tympanic cavity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Discharge under foreskin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Discomfort while speaking",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Disinhibition",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Disorganized behavior",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Disorientation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Disorientation in space",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Disorientation in time",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dissociated sensory loss",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Distance misjudgment",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Diurnal mood variation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Divergent strabismus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dix-Hallpike maneuver, rotatory nystagmus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dizziness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dizziness, head rotation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dizziness, vertigo",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Drinking alcohol at work",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Drinking alcohol despite awareness of harmful effects",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Drinking alone",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Drinking large quantities of alcohol",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Drinking large quantities of alcohol at one time",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Drinking to ease hangover",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Drooping lower eyelid",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Drooping mouth corner",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Drowsiness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Drunk driving",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dry, cracked skin, bleeding occasionally",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dry discharge on eyelids",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dry mouth",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dry skin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Duck-like gait",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dysarthria",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dysmenorrhoea",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dyspepsia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dysphagia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dysphagia, esophageal",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dysphagia, oropharyngeal",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dysphonia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dyspnea",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dyspnea, chronic",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dyspnea, exacerbating during exercise",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dyspnea, increasing over several hours or days",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dyspnea, increasing over several minutes or hours",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dyspnea, orthopnea",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dyspnea, paroxysmal nocturnal",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dyspnea, sudden onset",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dyspnea, with flare-ups and remissions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Dystonia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Earache",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Ear canal swelling",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, ankle joint",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, ankles",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, costochondral junctions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, daytime",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, dependent",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, elbow joint",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, face",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, finger",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, hand",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, hip joint",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, joint",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, knee joint",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, lip",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, lower limbs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, nighttime",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, one lower limb",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, periorbital",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, pitting",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, scrotum",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, shoulder joint",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, upper limb",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Edema, wrist joint",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Elbow bruising",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Elevated mood",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Enamel hypoplasia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Enamel lesions, caries",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Enlarged breasts",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Enlarged kidneys",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Enlarged lymph nodes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Enlarged salivary glands",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Enlargement of hands, feet, face, tongue and thickening of facial features",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Enlargement of the lymphoid tissue in the pharynx",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Epicritic sensation loss or impairment in fingertips",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erectile dysfunction",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema and scaling on almost entire skin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema and warmth of skin overlying a joint",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema, facial",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema, facial, butterfly-shaped",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema, finger",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema, foreskin or head of the penis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema, hand",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema, limb",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema, limb, hot to the touch",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema migrans",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema, palmar",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythema, scalp",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Erythematous tonsils",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Excessive fear in public situations",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Excessive saliva production",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Excessive sleepiness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Excessive tear production",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Excessive uterine enlargement in comparison to assumed duration of pregnancy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Excessive worry about the health of a child",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Excessive worrying about health of child",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Excess of hair",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Exophthalmos",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Eye flashes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Eyelid lesion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Eyelid lesion, itching and painful",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Eyelid lesion, occasionally painful",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Eyelid lesion, red and warm",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Eyelid lesion, red lump with yellow tip",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Eyelid tremors",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Eyelid twitching",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Eye pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Facial muscle paresis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Facial muscle spasms",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Facial pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Facial pain, longer than a few hours",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Facial pain, periodic",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Facial pain, severe",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Facial pain, sinus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Facial pain, sudden and stabbing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Facial pain, triggered by eating, touching, brushing teeth",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Facial pain, unilateral",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fainting",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fainting with convulsions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fainting with urination or defecation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fear",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fear of dying",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fear of going insane",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fear of losing control",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fear of obesity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fear of object, situation, action",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fear of public appearances",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling detached from your body",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling hot",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling of guilt",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling of guilt or shame after drinking alcohol",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling of helplessness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling of hopelessness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling of obstruction while swallowing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling of rectal fullness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling of resignation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling of weight in scrotum",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling overweight despite low weight",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling that tooth is about to explode",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Feeling unreal",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fever",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fever &gt; 101 °F",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fever between 99.5 and 101 °F",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fever, temperature not measured",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fever with flare-ups and remissions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Financial recklessness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fine downy hair",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Finger pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "First cigarette after awakening",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Fits of anger",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Flaccid dysarthria",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Flaccid paresis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Flaccid paresis, symmetrical",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Flat or blunted affect",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Foamy urine",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Foot pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Forgetting names of close friends and family",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Forward-leaning posture",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Foul-smelling stools",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Frequent bowel movement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Frequent infections",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Frequent infections, lower respiratory tract",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Frequent infections, upper respiratory tract",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Frequent urge to urinate",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Frequent urination",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Frequent urination, large quantities",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Frontal release signs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Frothy yellow-green vaginal discharge",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Galactorrhea",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Gastrointestinal complaints, stress-related",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "General anxiety",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Genu varum",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Glassy eyes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Globus sensation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Goldflam sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Gonda-Allen sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Gordon sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Gottron's papules",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Grandiosity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Grape-like vaginal discharge",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Gum erythema",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Gum pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Gynecomastia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hair loss",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hairy leukoplakia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Halitosis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hallucinations",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hallucinations, auditory",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hallucinations, cenesthetic",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hallucinations, gustatory",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hallucinations, olfactory",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hallucinations, visual",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hardening or tightness of skin on hands, face, or forearms",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hard lump in inguinal region",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hard lump in inguinal region, dark or bluish discoloration",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hard lump in inguinal region, irreducible",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hard lump in inguinal region, tender",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hard retinal exudates",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, anterior location",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, chronic",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, exacerbated by increased stress",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, exacerbating by tilting head forward",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, exacerbating in the morning",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, generalized",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, lancinating",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, mild",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, moderate",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, occipital",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, pressure",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, pulsing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, series over a period of time",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, severe",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, sudden",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, unilateral",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Headache, with flare-ups and remissions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Head drop",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Head tilt in order to avoid diplopia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Head tremors",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hearing loss",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hearing loss, progressing without fluctuation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hearing loss, sudden",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hearing loss, variable intensity and duration",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hearing voices arguing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hearing voices commenting",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Heartburn",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Heavy legs at the end of the day",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Heavy menstrual periods",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Heliotrope rash around eyes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hemarthrosis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hematemesis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hemianopsia bitemporalis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hemiparesis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hemiplegia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hemoptysis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hepatomegaly",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hiccups",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "High-arched palate",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Holster sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Homonymous hemianopsia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Honey-colored crust on the skin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hot flashes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hyperalgesia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hypersensitivity to sound",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hypersensitivity to stimuli",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hypertension, high blood pressure",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hypesthesia of half of face",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hypochondriacal delusions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hypopigmentation of the skin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hypopyon",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Hypotension",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Illusion of surroundings increasing or decreasing in size",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired balance and gait",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired concentration",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired downward eye motion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired lateral eye motion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired medial eye motion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired memory",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired memory, alcohol-related amnesia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired memory, finding objects of everyday use",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired memory, short-term",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired smell",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired social functioning",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired upward eye motion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired vision",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impaired vision on side with painful temple",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Impulsive behavior",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Inability to complete tasks",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Inability to move mandible sideways",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Inability to pass flatus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Inability to remember important aspects of a traumatic experience",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Inability to stand on toes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Inability to stop drinking alcohol",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Inability to stop flow of urine",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Increased abdominal girth",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Increased appetite",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Increased expiratory phase",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Increased libido",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Increased masseter reflex",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Increased palatine reflex",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Increased pharyngeal reflex",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Increased thirst",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Increase in sexual experiences or sensations needed to attain desired effect",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Infertility",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Insomnia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Intense, non-committal relationships",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Intermittent urine flow",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Interosseous muscles atrophy, feet",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Interosseous muscles atrophy, hands",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Intraretinal microvascular abnormalities",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Intrusive thoughts, obsessions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Intrusive thoughts, obsessive fears",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Intrusive thoughts, obsessive images",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Iris neovascularization",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Irregular menstruations",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Irritability",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Irritability when unable to engage in activity related to sex",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Irritation and erythema of vulva",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Itching after a hot shower or bath",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Itching around anus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Itching in crotch",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Itching in ear",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Itching of eyes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Itching of nose or throat",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Itching of urethral opening",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Jacobson sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Janeway lesion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Jaundice",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Jaundice during increased stress",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Jaundice during infectious disease",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Jaundice following intense physical exertion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Jaw locking when opening mouth",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint malformation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, aggravated during cold, damp weather",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, ankle",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, during ankle movement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, during elbow movement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, during hip movement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, during knee movement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, during movement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, during movement in the morning",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, during thumb movement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, during wrist movement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, elbow",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, hallux",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, hip",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, knee",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, severe",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, shoulder",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, sudden",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, tenderness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, thumb",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint pain, wrist",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Joint stiffness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Kayser–Fleischer ring",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Kernig's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Koplik's spots",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Kussmaul breathing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lack of boundaries in interpersonal relations",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lack of initiative, motivation or drive",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lack of rest",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lack of space in dental arch",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lack of strength in legs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lateropulsion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lead-pipe rigidity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Left limb-kinetic apraxia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lengthening of reaction time",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lens clouding",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Leopard-like spots on the skin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lethargy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lethargy, for more than 6 months",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Levine's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lhermitte's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lice eggs or nits on hair shafts",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Light sensitivity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Limb weakness ipsilateral to facial changes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lisch nodules",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Livedo reticularis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Local dark retinal blood vessels that lie in folds",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Local elevation of retina",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Local grey discoloration of retina",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Local retinal undulation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Loose teeth",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Loss of body hair",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Loss of consciousness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Loss of interest in activities previously enjoyed, lasting at least 2 weeks",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Loss of muscle mass",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Loss of muscle mass, hands",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Loss of pain sensation in the upper pharynx",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Loss of sense of vibration in distal parts of extremities",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Loss of temperature sensation, impaired temperature sensation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Loss of the lingual papillae",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Loss of vision in a superior quadrant",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Loss or impairment of proprioception",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lower intraocular pressure in affected eye by &gt; 4-5mmHg in comparison to unaffected eye",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lower limb tenderness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lower limb tenderness, calf",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Low self-esteem",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lump in testicle",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lumps, cysts or blisters on labia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lying about eating, hiding food",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Lymph node pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Making rash or impulsive decisions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Malocclusions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Marcus Gunn pupil",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Measles rash",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Mechanic's hand",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Mendel-Bechterev sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Menstrual period more than 3 weeks late",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Mental disturbances exacerbated by stress",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Miosis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Miscarriage",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Moniz sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Mood swings",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Morning stiffness of hand joints",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Motor retardation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Mouth breathing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Mouth ulcers",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Mucosal pallor",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Mucosal pallor, sudden",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Mucous secretion in stool",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Muscle cramps",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Muscle weakness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Muscle weakness, ascending",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Muscle weakness, large proximal muscles",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Muscle weakness makes barrier to movements",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Myalgia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Myalgia, deep and dull",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Myalgia, exacerbated by stress",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Mydriasis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Myringitis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nail clubbing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nail dystrophy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Narrowing of the mouth, difficulty opening mouth",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nasal catarrh",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nasal congestion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nasal congestion, chronic",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nasal polyps",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nasal speech",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nausea",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Neck asymmetry",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Neck edema",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Neck pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Neck pain, unilateral",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Neck vein distention",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Neglecting family, work or hobbies due to alcohol",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Neglecting obligations such as work, study or family to pursue sex or think about sex",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nervousness or weepiness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Neural tenderness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nihilistic delusions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nipple discharge",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nocturia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nodule located in breast",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Non-serious eye injury",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Non-stop drinking for several days",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nosebleeds",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Numbness of part of ear",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Numbness of tongue",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Numerous nevi",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nystagmus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Nystagmus, horizontal",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Ocular bulb rotation laterally and downwards",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Ocular bulb rotation medially and upwards",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Ocular motility disorder",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Oculomotor nerve palsy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Odynophagia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Oily skin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Oliguria",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Opacified tympanic membrane",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Open comedones",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Oppenheim sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Optic disc neovascularization",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Optic nerve disc pallor",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Orbicularis oris muscle spasm",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Organic cause",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Orthostatic hypotension",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Osler nodes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Ovarian enlargement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Overbite",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Overwork",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain and redness in temporal region",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain around nape of neck when standing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain behind ear",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain caused by firm pressure on sternal bone",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain caused by firm pressure on tibia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Painful defecation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Painful ejaculation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Painful intercourse",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in both lower limbs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in both lower limbs, stocking distribution",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in both upper limbs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain increases when touching ear area",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in crotch",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in crotch, severe",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in crotch, sudden",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in fingers or hand",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in glans penis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in groin during coughing, sneezing or laughing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in lower limb",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in lower limb, calf",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in lower limb, calf, severe while walking",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in lower limb, calf, severe while walking, intermittent claudication",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in scrotum",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in temporomandibular joint while yawning, chewing or biting",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain in upper limb",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain near eye socket",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pain while urinating",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Palatine petechiae",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pale and brittle nails",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pale or clay-colored stools",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pale skin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Palpable neck mass",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Palpitations",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Palpitations, worsen following caffeine intake",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Panic attacks in public appearances",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Papilledema",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Papule or nodule",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paralogical thinking",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paralysis, limb",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paraspinal muscle tenderness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresis, limb",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresis, limb, upper limbs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresthesia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresthesia around the mouth",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresthesia, both upper limbs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresthesia, face",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresthesia in both upper limbs, glove distribution",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresthesia in feet",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresthesia, limbs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresthesia, one hand",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresthesia, one or both lower limbs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresthesias, ascending",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Paresthesias, symmetrical",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Parotid swelling",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Past appendectomy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Past cholecystectomy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pathologic fractures",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pencil-thin stools",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pericardial friction rub",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Perionychial pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Perseveration",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Petechiae",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pharyngeal erythema",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pharyngeal pain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pharyngeal swelling, bilateral",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pharyngeal swelling, unilateral",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Phobia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Physical trauma (to self or others) after drinking alcohol",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pill rolling tremor",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pleural effusion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pleural friction rub",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Poor personal hygiene",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Positive allergy challenge",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Positive skin allergy (prick or patch) test",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Post-nasal drip",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Premature graying",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Preoccupation with food",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Presence of neurofibromas",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pretibial myxedema",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Priapism",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Problems with everyday tasks such as washing, eating, dressing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Prolonged bleeding time",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Prostate enlargement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pruritus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pruritus, aggravated by change in temperature, sweating, or wool",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pruritus, most intense at night",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pruritus, scalp",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pseudomembrane in throat or nose",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Psychomotor retardation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pupil dilation variation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pupil or pupils unreactive to accomodation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Purpuric rash",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pustule",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pus under the skin of the finger",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Pyramidal signs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Quickening of thoughts and speech",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Rash",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Rebound tenderness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Recent alcohol consumption",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Recent medication",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Receptive aphasia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Recurrent fever (about every 24, 48 or 72 hours)",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Recurrent gastric ulcers",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Recurrent kidney stones",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Recurrent tonsils inflammation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Red and stinging conjunctivae",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Red and swollen oral mucosa",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Red eye",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Red maculas with silver-white, flaky scales",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Red macules",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Redness behind the ear",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Redness on shoulders and nape of neck",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Red stretch marks on abdomen, hips or thighs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Reduced ability to maintain focus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Reduced body temperature",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Reduced degree of facial expression",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Re-experiencing the psychological trauma - circumstances resembling or associated with the stressor",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Re-experiencing the psychological trauma in nightmares",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Re-experiencing the psychological trauma in recurring flashbacks",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Re-experiencing the psychological trauma through physiological reactivity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Regurgitation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Religious delusion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Restricted mobility, problem bending over",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Restricted range of joint motion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Retinal artery occlusions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Retinal hemorrhage",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Retinal microaneurysms",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Retinal neovascularization elsewhere",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Retinal swelling",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Retraction or indentation of nipple",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Retrobulbar neuritis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Rhinitis triggered by environment",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Rhinophyma",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Rhonchi during chest auscultation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Rictus grin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Risky drinking",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Romberg's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Rose spots on lower chest and abdomen",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Rossolimo's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Rovsing's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Russell's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sagging of the palate ipsilateral to suspected nerve damage",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Scarlet fever rash",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Schaeffer's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Schizophasia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Scleral icterus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Scotoma, eye floaters",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Scratched eye",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Scrotal transillumination",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Seasonal pattern of depressive symptoms",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Secret drinking",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Seizures",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Self-disgust after binge eating",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sense of self-worth dependent on weight",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sensory loss in both arms",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sensory loss in one limb",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sensory loss involving the face",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sexual activity in recent months",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sexual activity more often or with more partners than intended",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Shafer's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Shallow breathing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Simple auditory paradelusions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Simple visual paradelusions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sinuses tender to palpation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sinus pressure",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Skin and blood vessel inflammation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Skin desquamation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Skin mass",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Skin mole or birthmark with diameter &gt; 0.25 in",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Skin mole or birthmark with irregular border",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Skin pain, severe",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Skin pain, severe, lasting more than a few hours",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Skin pallor, sudden",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Skin phototype I or II",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Skin thickening",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Skull lesions",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sleep disorder",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Slower gait",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Smoking large quantity of cigarettes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Smoking most cigarettes in the morning",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Smooth face without wrinkles",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sneeze",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sneezing attacks",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Snoring",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Social isolation",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Social maladjustment",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Soft lump in inguinal region",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Soft lump in inguinal region, decreasing while supine",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Soft lump in inguinal region, enlarging during increase in abdominal pressure",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Soft lump in inguinal region, reducible",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Soft mass in scrotum",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Soft retinal exudates",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Spasms in upper extremities",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Spastic dysarthria",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Spasticity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Spending a lot of time on sex-related activity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Spine asymmetry",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Spine or joints stiffness subsiding after exercise",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Splenic agenesis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Splenomegaly",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Steatorrhea",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sterling's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Stiff neck",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Stiffness of spine in the morning",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Stimulants use (amphetamine, cocaine)",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Stinging eyes and feeling of sand under eyelids",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Stransky's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Strawberry tongue",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Stridor",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Stroke",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Strumpell's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sucking sensation in chest",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sudden face flushing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sudden falls without loss of consciousness (drop attack)",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sudden increase in blood pressure",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Suicidal thoughts",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Suicidal thoughts with plan and steps taken",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sunken eyeballs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Surface of lesion on genitals resembles cauliflower",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Suspicious mole or birthmark",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sweating",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sweating, night",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Sweating on forehead on painful side",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Swelling in the mastoid region",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Swelling of dorsal side of feet",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Swelling of nasal concha",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Swelling of nasal mucosa",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Swelling of temporal artery",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Swollen blue or bluish-gray nasal mucosa",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Swollen cheek",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Swollen eyelid",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Swollen gums",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Symmetrical flaccid paresis in lower limbs (mainly feet)",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Symmetrical flaccid paresis in upper limbs (mainly hands)",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Symptoms appear after taking painkillers, change in diet",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Symptoms appear few days before period",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Symptoms do not occur during sleep",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Symptoms exacerbated by cold temperature",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Symptoms get better with physical activity",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Symptoms increase in evening",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Symptoms occur after eating or drinking foods that contain lactose",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Symptoms occur several hours after drinking excessive alcohol",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Symptoms peak 24 hours after start of menstrual period",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Symptoms subside when menstrual period begins",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tachycardia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Taste disorder in anterior two-thirds of tongue",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Taste disorder in posterior one third of tongue",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Taste disorders",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Telangiectasias",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Telangiectasias, face",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Temporary blindness",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tenesmus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Terry's nails",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Thickened nails",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Thickened nails with pits or grooves",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Thick eye discharge",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Thoughts of harming one's child",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Thoughts of wanting to kill one's child",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Throckmorton's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Thumb bruising",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tingling fingers",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tingling in extremities ipsilateral to facial changes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tinnitus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tinnitus, low-frequency",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tinnitus, pulsatile",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Toenail dystrophy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tongue enlargement",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tongue erythema",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tongue muscle atrophy",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tonic-clonic seizures",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tonsil stones",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Toothache",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Toothache after contact with cold, sweet or hot food",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Toothache, reduced after cold foods or drinks",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Toothache, severe",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Toothache, strong reaction to heat",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Toothache while chewing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tooth fracture",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tooth loss",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Transverse furrow on the nose",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tremor, flapping",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tremor, intention",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tremor, kinetic",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tremor, resting",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tremors",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tremors, both hands",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tremors, in one hand",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tremors, stress-related",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tremors, subside after drinking alcohol",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tremors, tongue",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tremors, worsen after caffeine intake",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Trigeminal neuralgia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Trismus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tromner's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Trophic changes",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Trophic ulcer",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Trophic ulcer on the plantar side of the foot",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Trouble beginning urination",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Trouble planning the future",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Trousseau sign of latent tetany",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Tympanic membrane light reflex distortion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Ulceration on nipple",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Ulcerations or abscesses near the anus",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Ulcer on skin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Unilateral enophthalmos",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Unilateral facial paresis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Unilateral vulval swelling",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Urethral discharge when pressing penis",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Urinary incontinence",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Urinary retention",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Urinary urgency",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Urination in small amounts",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Urination while coughing or laughing or during physical exertion",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Urticaria",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Urticaria triggered by cold",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Urticaria triggered by heat",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Urticaria triggered by prolonged pressure on the skin",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Urticaria triggered by scratching",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Urticaria triggered by sunlight",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Using methods to lose weight: vomiting, starvation diets",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Uvula deviation towards unaffected side",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Vaginal discharge",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Vaginal discharge, scant, white, clumpy and odorless",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Vaginal discharge with unpleasant odor",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Verbal learning disability",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Vesicular exanthema of mouth or ear",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Violating social norms after drinking alcohol",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Visible and palpable enlarged vein",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Visible head louse on scalp",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Visual agnosia",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Visual field narrowing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Vitreous hemorrhage",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Vomiting",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Vomiting, less than 1h after meal",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Vomiting, more often in the morning",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Vomiting, projectile",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "V-shaped redness on chest",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Waist-hip ratio (WHR) over 0.85 in women",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Waist-hip ratio (WHR) over 1.0 in men",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Waking up early",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Weak eye clenching",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Weakness exacerbates after exercise",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Weak or absent palatine reflex",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Weak or absent pharyngeal reflex",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Weak peripheral pulses",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Weak pulse in legs",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Weight gain",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Weight loss",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Weight loss without loss of appetite",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Weiss ring",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Westphal's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Wheezes, sibilant rhonchi over chest",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Wheezing",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "White nail discoloration",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "White oral plaques",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "White patch on cornea",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Winterbottom's sign",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Wrinkling or dimpling of skin on breast",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Wrist bruising",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Xanthelasma",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Xanthoma",
+    "label": "symptom_checker"
+  },
+  {
+    "text": "Yellow nail discoloration",
+    "label": "symptom_checker"
+  }
+]

@@ -1,1 +1,1 @@
-# DarwinBot - Your Personal Health Assistant
+# DarwinBot - Intelligent Health Assistant

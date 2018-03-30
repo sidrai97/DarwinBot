@@ -23,30 +23,30 @@
             			"payload":"symptom_checker"
         			},
         			{
-            			"title":"Health Tracker 💪",
+            			"title":"Exercises Encyclopedia 📔",
+            			"type":"postback",
+            			"payload":"exercise_encyclopedia"
+        			},
+        			{
+            			"title":"Fitness Tracker 💪",
             			"type":"nested",
             			"call_to_actions":[
+            				{
+            					"title":"Workout Recommendations 🏋",
+            					"type":"postback",
+            					"payload":"get_workout_recommendations"
+            				},
             				{
             					"title":"Workout Log 📝",
             					"type":"postback",
             					"payload":"plan_my_workout"
             				},
             				{
-            					"title":"Get Workout Recommendations 🏋",
-            					"type":"postback",
-            					"payload":"get_workout_recommendations"
-            				},
-            				{
-            					"title":"My Workout Statistics 📊",
+            					"title":"Workout Statistics 📊",
             					"type":"postback",
             					"payload":"my_workout_statistics"
             				}
             			]
-        			},
-        			{
-            			"title":"Exercises Encyclopedia 📔",
-            			"type":"postback",
-            			"payload":"exercise_encyclopedia"
         			}
         		]
     		},
