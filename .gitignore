@@ -1,6 +1,6 @@
 __pycache__
 db
-intentClassifier
+intentClassifier/
 .vscode
 # Logs
 logs
