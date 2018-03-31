@@ -115,14 +115,30 @@ elif 'message' in eventObject:
         elif label == "progress_stats":
             messageHandler.sendTextMessage(recipientId,label)
         elif label == "update_details":
-            messageHandler.sendTextMessage(recipientId,label)
+            buttonsArray=[
+                {
+                    'type':'web_url',
+                    'url':commonVars.app_url+'/getDetails?userid='+recipientId,
+                    'title':'Click Here',
+                    'webview_height_ratio':'compact',
+                    'webview_share_button':'hide'
+                }
+            ]
+            text='To add/update your personal details click the button attached'
+            messageHandler.sendButtonMessage(recipientId,text,buttonsArray)
         elif label == "workout_recommendation":
+            
             messageHandler.sendTextMessage(recipientId,label)
         elif label == "help":
-            messageHandler.sendTextMessage(recipientId,label)
+            messageText = "Hi! I'm Darwin your health assistant\nAnd i can help you with the following things:\n\t1. Symptom checking\n\t2. Exercises Information\n\t3. Exercises Recommendation\n\t4. Workout log\n\t5. Workout Statistics\nUse the given buttons or simply type your query and send it to me"
+            messageHandler.sendTextMessage(recipientId,messageText)
         elif label == "greetings":
-            messageHandler.sendTextMessage(recipientId,label)
+            greets=['Hi','Hey','Heya','Yoo','Hello']
+            from random import randint
+            messageText = greets[randint(0,len(greets)-1)]+', Lets begin!!'
+            messageHandler.sendTextMessage(recipientId,messageText)
         elif label == "end_conversation":
-            messageHandler.sendTextMessage(recipientId,label)
+            messageText = 'Bye!!'
+            messageHandler.sendTextMessage(recipientId,messageText)
 else:
     messageHandler.sendTextMessage(recipientId,messageText)

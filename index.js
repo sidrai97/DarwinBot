@@ -197,7 +197,7 @@ app.get('/getExerciseDetails', function(req, resp){
 app.get('/viewSteps', function(req, resp){
 	var name=req.query.name
 	var steps=req.query.steps
-	console.log(steps)
+	//console.log(steps)
 	steps=JSON.parse(steps)
 	resp.render('viewSteps', {name:name,steps:steps})
 })
