@@ -1,6 +1,6 @@
 import sys
 sys.path.append("C:/Users/sid/Desktop/Darwin/DarwinBot/process_message/intentClassifier")
-import messageHandler, mongoCURD, json, symptomChecker, commonVars, predict_merge, textblob
+import messageHandler, mongoCURD, json, symptomChecker, commonVars, predict_merge, textblob, workout_recommendations
 from argsLoader import loadCmdArgs
 from userProfile import userProfileApi
 
@@ -47,11 +47,19 @@ if 'postback' in eventObject:
         messageText="Make sure i have your updated info. And then describe your symptoms such as stomach ache, headache or fatigue"
         messageHandler.sendTextMessage(recipientId,messageText)
     elif eventObject['postback']['payload'] == 'plan_my_workout':
-        messageText="Feature coming soon!"
-        messageHandler.sendTextMessage(recipientId,messageText)
+        buttonsArray=[
+            {
+                'type':'web_url',
+                'url':commonVars.app_url+'/workoutLog',
+                'title':'Click Here',
+                'webview_height_ratio':'tall',
+                'webview_share_button':'hide'
+            }
+        ]
+        text='Lets update your Workout Log'
+        messageHandler.sendButtonMessage(recipientId,text,buttonsArray)
     elif eventObject['postback']['payload'] == 'get_workout_recommendations':
-        messageText="Feature coming soon!"
-        messageHandler.sendTextMessage(recipientId,messageText)
+        workout_recommendations.get_workout_recommendation(recipientId)
     elif eventObject['postback']['payload'] == 'my_workout_statistics':
         messageText="Feature coming soon!"
         messageHandler.sendTextMessage(recipientId,messageText)
@@ -127,8 +135,7 @@ elif 'message' in eventObject:
             text='To add/update your personal details click the button attached'
             messageHandler.sendButtonMessage(recipientId,text,buttonsArray)
         elif label == "workout_recommendation":
-            
-            messageHandler.sendTextMessage(recipientId,label)
+            workout_recommendations.get_workout_recommendation(recipientId)
         elif label == "help":
             messageText = "Hi! I'm Darwin your health assistant\nAnd i can help you with the following things:\n\t1. Symptom checking\n\t2. Exercises Information\n\t3. Exercises Recommendation\n\t4. Workout log\n\t5. Workout Statistics\nUse the given buttons or simply type your query and send it to me"
             messageHandler.sendTextMessage(recipientId,messageText)

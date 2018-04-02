@@ -284,6 +284,17 @@ app.get('/setGroupMultiple', function(req,resp){
 	resp.redirect(windowCloseUrl)
 })
 
+//workout log
+app.get('/workoutLog', function(req, resp){
+	resp.render('workoutlog')
+})
+app.get('/storeLog', function(req, resp){
+	console.log("+")
+})
+app.get('/storeLogDone', function(req, resp){
+	console.log("done")
+})
+
 // Send Message to Facebook
 function callSendAPI(messageData) {
 	request({

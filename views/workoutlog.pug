@@ -1,0 +1,51 @@
+html
+	head
+		title Workout Log
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name="theme-color", content="#427BBE")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+	body
+		div(class="container")
+			form(method="GET")
+				input(type="hidden", name="userid", value= userid)
+				br
+				input(type="text", id="exercisename", name="exercisename", class="form-control", placeholder="Exercise name", required) 
+				hr
+				select(class="form-control",name="weighttype", id="weighttype")
+					option(value="weighted") Weighted
+					option(value="bodyweight") Body Weight	
+				br
+				input(type="number", id="weight", name="weight", class="form-control", placeholder="Weight (in Kgs/Lbs)", required) 	
+				select(class="form-control", name="weightsystem", id="weightsystem")
+					option(value="kgs") Kgs
+					option(value="lbs") Lbs	
+				hr
+				input(type="number", id="numberofsets", name="numberofsets", class="form-control", placeholder="Number of sets", required) 
+				hr
+				input(type="number", id="numberofreps", name="numberofreps", class="form-control", placeholder="Number of reps", required) 
+				br
+				div(class="row pull-right container")
+					input(class="form-control btn btn-info btn-lg", type="submit", value="+", formaction="/storeLog")
+					br
+					br
+					input(class="form-control btn btn-primary btn-lg", type="submit", value="Done", formaction="/storeLogDone")
+		script(type='text/javascript').
+			document.getElementById('weighttype').addEventListener('change', function() {
+				if (this.value == "weighted") 
+				{
+					document.getElementById('weight').disabled = false;
+					document.getElementById('weightsystem').disabled = false;
+					document.getElementById('weight').style.display = "block";
+					document.getElementById('weightsystem').style.display = "block";
+				} 
+				else 
+				{
+					document.getElementById('weight').disabled = true;
+					document.getElementById('weightsystem').disabled = true;
+					document.getElementById('weight').style.display = "none";
+					document.getElementById('weightsystem').style.display = "none";
+				}
+			});
