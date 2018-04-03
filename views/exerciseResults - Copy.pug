@@ -16,22 +16,25 @@ html
             });        
 
     body(class="container-fluid" style="background: #a0a0a0;")
-        div(class="container", style="background: #a0a0a0;")
-            table(id="exerciseTable", class="container table" style="")
-                thead
+        table(id="exerciseTable", class="table")
+            thead
+                tr
+                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;")
+                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Exercise
+                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Muscle
+                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Type
+                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Equipment
+                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Level
+                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") 
+            tbody
+                each val in edata
                     tr
-                        th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Exercise
-                        th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Muscle
-                        th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Type
-                        th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Equipment
-                        th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Level
-                        th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") 
-                tbody
-                    each val in edata
-                        tr
-                            td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.name
-                            td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.muscle
-                            td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.type
-                            td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.equipment
-                            td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.level
-                            td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val._id
+                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")
+                            img(src= val.right_img_url,height=50)
+                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.name
+                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.muscle
+                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.type
+                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.equipment
+                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.level
+                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")
+                            a(href= "/getExerciseDetails?userid="+userid+"&id="+val._id, class="btn btn-info") View

@@ -8,12 +8,16 @@ html
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
 
-    body(class="container-fluid" style="background: #a0a0a0;")
-        table(id="exerciseTable", class="table")
+    body(class="container-fluid" style="background: #ffffff;")
+        table(id="exerciseTable", class="table table-responsive table-striped")
             thead
-                tr
-                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Steps
+                tr(style="background:#427BBE;")
+                    th(class="col-sm-1 col-xs-1 col-md-1 col-lg-1", style ="") 
+                    th(class="", style ="") Steps
             tbody
+                -var i= 1
                 each val in steps
                     tr
-                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val
+                        td(class="", style ="")= i
+                        td(class="", style ="")= val
+                    -i=i+1

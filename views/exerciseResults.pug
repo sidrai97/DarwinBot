@@ -19,22 +19,21 @@ html
         table(id="exerciseTable", class="table")
             thead
                 tr
-                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;")
-                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Exercise
-                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Muscle
-                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Type
-                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Equipment
-                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") Level
-                    th(class="col-sm-1 col-xs-1", style ="word-break:break-all;") 
+                    th(class="col-sm-1 col-xs-1 col-md-1 col-lg-1", style ="text-transform: capitalize;")
+                    th(class="", style ="text-transform: capitalize;") Exercise
+                    th(class="col-sm-2 col-xs-2 col-md-2 col-lg-2", style ="text-transform: capitalize;") Muscle
+                    th(class="col-sm-2 col-xs-2 col-md-2 col-lg-2", style ="text-transform: capitalize;") Type
+                    th(class="col-sm-2 col-xs-2 col-md-2 col-lg-2", style ="text-transform: capitalize;") Equipment
+                    th(class="col-sm-2 col-xs-2 col-md-2 col-lg-2", style ="text-transform: capitalize;") Level
             tbody
                 each val in edata
                     tr
-                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")
-                            img(src= val.right_img_url,height=50)
-                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.name
-                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.muscle
-                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.type
-                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.equipment
-                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")= val.level
-                        td(class="col-sm-1 col-xs-1", style ="word-break:break-all;")
-                            a(href= "/getExerciseDetails?userid="+userid+"&id="+val._id, class="btn btn-info") View
+                        td(class="col-sm-1 col-xs-1 col-md-1 col-lg-1", style ="text-transform: capitalize;")
+                            img(class="img img-responsive img-circle", src= val.right_img_url,height=50)
+                            br
+                            a(href= "/getExerciseDetails?userid="+userid+"&id="+val._id, class="btn btn-info",style="margin-top:5px;") View
+                        td(class="", style ="text-transform: capitalize;")= val.name
+                        td(class="col-sm-2 col-xs-2 col-md-2 col-lg-2", style ="text-transform: capitalize;")= val.muscle
+                        td(class="col-sm-2 col-xs-2 col-md-2 col-lg-2", style ="text-transform: capitalize;")= val.type
+                        td(class="col-sm-2 col-xs-2 col-md-2 col-lg-2", style ="text-transform: capitalize;")= val.equipment                            
+                        td(class="col-sm-2 col-xs-2 col-md-2 col-lg-2", style ="text-transform:capitalize;")= val.level
