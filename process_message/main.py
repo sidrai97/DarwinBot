@@ -50,7 +50,7 @@ if 'postback' in eventObject:
         buttonsArray=[
             {
                 'type':'web_url',
-                'url':commonVars.app_url+'/workoutLog',
+                'url':commonVars.app_url+'/workoutLog?userid='+recipientId,
                 'title':'Click Here',
                 'webview_height_ratio':'tall',
                 'webview_share_button':'hide'

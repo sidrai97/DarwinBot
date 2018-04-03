@@ -119,3 +119,10 @@ def getExercisesDetails(eid):
     if len(result) > 0:
         return result
     return []
+
+def storeWorkoutLog(userid,data):
+    client=getDbConnection()
+    db=client.darwin
+    result=db.users.update({'_id': userid}, {'$push': {'workoutLog': data} })
+    client.close()
+    return

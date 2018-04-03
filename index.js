@@ -286,13 +286,41 @@ app.get('/setGroupMultiple', function(req,resp){
 
 //workout log
 app.get('/workoutLog', function(req, resp){
-	resp.render('workoutlog')
+	var userid=req.query.userid
+	resp.render('workoutlog',{userid:userid})
 })
 app.get('/storeLog', function(req, resp){
-	console.log("+")
+	var userid=req.query.userid
+	// python execution
+	var pypath = './process_message/workoutLog.py'
+	var options = {mode:'text',args:[JSON.stringify(req.query)]}
+	PythonShell.run(pypath,options,function(err,results){
+		if(err) throw err
+		for(var idx=0; idx<results.length; idx++){
+			var messageData=JSON.parse(results[idx])
+			console.log("received from python : "+messageData)
+			callSendAPI(messageData)
+			setTimeout(function(){},1000)
+		}
+	})
+
+	resp.render('workoutlog',{userid:userid})
 })
 app.get('/storeLogDone', function(req, resp){
-	console.log("done")
+	// python execution
+	var pypath = './process_message/workoutLog.py'
+	var options = {mode:'text',args:[JSON.stringify(req.query)]}
+	PythonShell.run(pypath,options,function(err,results){
+		if(err) throw err
+		for(var idx=0; idx<results.length; idx++){
+			var messageData=JSON.parse(results[idx])
+			console.log("received from python : "+messageData)
+			callSendAPI(messageData)
+			setTimeout(function(){},1000)
+		}
+	})
+
+	resp.redirect(windowCloseUrl)
 })
 
 // Send Message to Facebook

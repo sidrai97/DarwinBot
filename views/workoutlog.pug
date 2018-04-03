@@ -7,11 +7,13 @@ html
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
-	body
+	body(onload="defaultDate()")
 		div(class="container")
 			form(method="GET")
 				input(type="hidden", name="userid", value= userid)
 				br
+				input(type="date", id="logDate", name="logDate", class="form-control", required)
+				hr
 				input(type="text", id="exercisename", name="exercisename", class="form-control", placeholder="Exercise name", required) 
 				hr
 				select(class="form-control",name="weighttype", id="weighttype")
@@ -33,6 +35,9 @@ html
 					br
 					input(class="form-control btn btn-primary btn-lg", type="submit", value="Done", formaction="/storeLogDone")
 		script(type='text/javascript').
+			function defaultDate() {
+				document.getElementById("logDate").valueAsDate = new Date()
+			}
 			document.getElementById('weighttype').addEventListener('change', function() {
 				if (this.value == "weighted") 
 				{
