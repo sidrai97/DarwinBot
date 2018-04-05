@@ -346,6 +346,14 @@ app.get('/progressStats', function(req, resp){
 app.get('/getGraph', function(req, resp){
 	var userid=req.query.userid
 	var exercisename=req.query.exercisename
+	var weighttype=req.query.weighttype
+	var yaxis=null
+	if(weighttype == "bodyweight"){
+		yaxis = "reps"
+	}
+	else{
+		yaxis = req.query.yaxis
+	}
 	//console.log(req.query)
 	//python execution
 	var pypath = './process_message/exerciseStats.py'
@@ -354,11 +362,10 @@ app.get('/getGraph', function(req, resp){
 		if(err) throw err
 		for(var idx=0; idx<results.length; idx++){
 			var messageData=results[idx]
-			messageData=messageData.replace(/'/g,'"')
-			messageData=JSON.parse(messageData)
-			//console.log(messageData)
-			if(messageData.length > 0)
-				resp.render('viewGraph', {userid:userid, exercisename:exercisename,options:messageData})
+			//messageData=messageData.replace(/'/g,'"')
+			console.log(messageData)
+			if(messageData != "[]")
+				resp.render('viewGraph', {userid:userid, exercisename:exercisename, yaxis:yaxis, options:messageData})
 			else
 				resp.send('No data found! Try Again...')
 		}

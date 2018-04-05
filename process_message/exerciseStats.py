@@ -13,8 +13,9 @@ else:
 details=mongoCURD.getStatsData(userid,exercisename)
 final=[]
 for a in details:
-    if yaxis == "reps":
-        final.append({'logDate':a['logDate'],'reps':a['numberofreps']})
-    else:
-        final.append({'logDate':a['logDate'],'weight':a['weight']})
+    if weighttype == a['weighttype']:
+        if yaxis == "reps":
+            final.append({'logDate':a['logDate'],'freq':a['numberofreps']})
+        elif yaxis == "weights" and "weight" in a:
+            final.append({'logDate':a['logDate'],'freq':a['weight']})
 print(final)
