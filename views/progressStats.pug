@@ -1,0 +1,50 @@
+html
+    head
+        title Statistics 📊
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(name="theme-color", content="#427BBE")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    body
+        div(class="container")
+            form(method="GET")
+                input(type="hidden", name="userid", value= userid)
+                br
+                select(class="form-control",name="exercisename", id="exercisename")
+                    each obj in options
+                        option(value= obj) #{obj}
+                hr
+                select(class="form-control",name="weighttype", id="weighttype")
+                    option(value="weighted") Weighted
+                    option(value="bodyweight") BodyWeight
+                hr
+                h3(id="axisText") Y-axis
+                select(class="form-control", name="yaxis", id="yaxis")
+                    option(value="weights") Weights
+                    option(value="reps") Reps	
+                hr(id="axisHR")
+                input(class="form-control btn btn-info", type="submit", value="View", formaction="/getGraph")
+                hr
+        script(type='text/javascript').
+            document.getElementById('weighttype').addEventListener('change', function() {
+                if (this.value == "weighted") 
+                {
+                    document.getElementById('yaxis').disabled = false;
+                    document.getElementById('yaxis').style.display = "block";
+                    document.getElementById('axisText').disabled = false;
+                    document.getElementById('axisText').style.display = "block";
+                    document.getElementById('axisHR').disabled = false;
+                    document.getElementById('axisHR').style.display = "block";
+                } 
+                else 
+                {
+                    document.getElementById('yaxis').disabled = true;
+                    document.getElementById('yaxis').style.display = "none";
+                    document.getElementById('axisText').disabled = true;
+                    document.getElementById('axisText').style.display = "none";
+                    document.getElementById('axisHR').disabled = true;
+                    document.getElementById('axisHR').style.display = "none";
+                }
+            });

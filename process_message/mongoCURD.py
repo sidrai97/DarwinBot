@@ -126,3 +126,29 @@ def storeWorkoutLog(userid,data):
     result=db.users.update({'_id': userid}, {'$push': {'workoutLog': data} })
     client.close()
     return
+
+def getExerciseNames(userid):
+    client=getDbConnection()
+    db=client.darwin
+    result=db.users.distinct('workoutLog.exercisename',{'_id': userid})
+    client.close()
+    result=list(result)
+    if len(result) > 0:
+        return result
+    return []
+
+def getStatsData(userid,exercisename):
+    client=getDbConnection()
+    db=client.darwin
+    result=db.users.aggregate([{'$match':{'_id':userid} }, {'$project': {'_id':0, 'workoutLog':{'$filter': {'input':'$workoutLog', 'as':'log', 'cond':{'$eq':["$$log.exercisename",exercisename]}}}}}])
+    client.close()
+    result=list(result)
+    result = result[0]['workoutLog']
+    if result is None:
+        return []
+    else:
+        return result
+    #db.users.aggregate([{'$match':{'_id':"1485864581530305"} }, {'$project': {'_id':0, 'workoutLog':{'$filter': {'input':'$workoutLog', 'as':'log', 'cond':{'$eq':["$$log.exercisename",'Machine rows']}}}}}, {'$project': {'workoutLog.weight':1}}  ])
+
+#print(getStatsData("1485864581530305","Machine rows"))
+#print(getStatsData("1250200895092053","Machine rows"))

@@ -323,6 +323,48 @@ app.get('/storeLogDone', function(req, resp){
 	resp.redirect(windowCloseUrl)
 })
 
+//statistics
+app.get('/progressStats', function(req, resp){
+	var userid=req.query.userid
+	// python execution
+	var pypath = './process_message/exerciseNames.py'
+	var options = {mode:'text',args:[userid]}
+	PythonShell.run(pypath,options,function(err,results){
+		if(err) throw err
+		for(var idx=0; idx<results.length; idx++){
+			var messageData=results[idx]
+			messageData=messageData.replace(/'/g,'"')
+			messageData=JSON.parse(messageData)
+			//console.log(messageData)
+			if(messageData.length > 0)
+				resp.render('progressStats',{userid:userid, options:messageData})
+			else
+				resp.send('No data found! Try Again...')
+		}
+	})
+})
+app.get('/getGraph', function(req, resp){
+	var userid=req.query.userid
+	var exercisename=req.query.exercisename
+	//console.log(req.query)
+	//python execution
+	var pypath = './process_message/exerciseStats.py'
+	var options = {mode:'text',args:[JSON.stringify(req.query)]}
+	PythonShell.run(pypath,options,function(err,results){
+		if(err) throw err
+		for(var idx=0; idx<results.length; idx++){
+			var messageData=results[idx]
+			messageData=messageData.replace(/'/g,'"')
+			messageData=JSON.parse(messageData)
+			//console.log(messageData)
+			if(messageData.length > 0)
+				resp.render('viewGraph', {userid:userid, exercisename:exercisename,options:messageData})
+			else
+				resp.send('No data found! Try Again...')
+		}
+	})
+})
+
 // Send Message to Facebook
 function callSendAPI(messageData) {
 	request({

@@ -61,8 +61,17 @@ if 'postback' in eventObject:
     elif eventObject['postback']['payload'] == 'get_workout_recommendations':
         workout_recommendations.get_workout_recommendation(recipientId)
     elif eventObject['postback']['payload'] == 'my_workout_statistics':
-        messageText="Feature coming soon!"
-        messageHandler.sendTextMessage(recipientId,messageText)
+        buttonsArray=[
+            {
+                'type':'web_url',
+                'url':commonVars.app_url+'/progressStats?userid='+recipientId,
+                'title':'Click Here',
+                'webview_height_ratio':'tall',
+                'webview_share_button':'hide'
+            }
+        ]
+        text='Lets checkout your workout statistics'
+        messageHandler.sendButtonMessage(recipientId,text,buttonsArray)
     elif eventObject['postback']['payload'] == 'exercise_encyclopedia':
         buttonsArray=[
             {
@@ -119,9 +128,29 @@ elif 'message' in eventObject:
             text="To open the Encyclopedia you have to click the button below!!"
             messageHandler.sendButtonMessage(recipientId,text,buttonsArray)
         elif label == "plan_workout":
-            messageHandler.sendTextMessage(recipientId,label)
+            buttonsArray=[
+                {
+                    'type':'web_url',
+                    'url':commonVars.app_url+'/workoutLog?userid='+recipientId,
+                    'title':'Click Here',
+                    'webview_height_ratio':'tall',
+                    'webview_share_button':'hide'
+                }
+            ]
+            text='Lets update your Workout Log'
+            messageHandler.sendButtonMessage(recipientId,text,buttonsArray)
         elif label == "progress_stats":
-            messageHandler.sendTextMessage(recipientId,label)
+            buttonsArray=[
+                {
+                    'type':'web_url',
+                    'url':commonVars.app_url+'/progressStats?userid='+recipientId,
+                    'title':'Click Here',
+                    'webview_height_ratio':'tall',
+                    'webview_share_button':'hide'
+                }
+            ]
+            text='Lets checkout your workout statistics'
+            messageHandler.sendButtonMessage(recipientId,text,buttonsArray)
         elif label == "update_details":
             buttonsArray=[
                 {
